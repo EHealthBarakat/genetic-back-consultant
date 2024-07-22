@@ -2,11 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Auth\AuthForgotPasswordRequest;
 use App\Http\Requests\Auth\AuthLoginRequest;
+use App\Http\Requests\Auth\AuthSendOtpRequest;
 use App\Models\User;
+use App\Models\UserVerify;
+use App\Services\SmsService;
+use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
+
+
 /**
  * @group Auth
  * @unauthenticated
@@ -77,6 +84,106 @@ class AuthController extends Controller
             'user' => $user,
             'token' => $token
         ], Response::HTTP_OK);
+
+
+    }
+
+    /**
+     * @param AuthSendOtpRequest $request
+     * @return JsonResponse
+     */
+    public function sendOtp(AuthSendOtpRequest $request, SmsService $sendSms)
+    {
+
+        // 1. Get Username type:
+        $username = $request->user_name;
+        $type = $this->getUserNameType($username);
+        $is_already_sent = UserVerify::where("user_name", $username)
+            ->where("created_at", ">", Carbon::now()->subMinutes(5))->count();
+        if ($is_already_sent) {
+            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'token is already sent');
+
+        }
+
+        // 3. Generate new token
+        $user_verify = new UserVerify();
+        $user_verify->user_name = $username;
+        $user_verify->otp_code = rand(10000, 99999);
+        $user_verify->save();
+        // 4. Send:
+
+        switch ($type) {
+            case "mobile":
+
+                $pattern_code = 'verify';
+                $recipient = $username;
+                $pattern_values = [$user_verify->otp_code];
+                $response = $sendSms->sendWithPattern($pattern_code, $recipient, $pattern_values);
+
+                break;
+
+            case "email":
+//                $mailData = [
+//                    'title' => 'Mail from ehealthoperator.com',
+//                    'body' => 'otp_code: '.$user_verify->otp_code
+//                ];
+//                Mail::to($username)->send(new OtpMail($mailData));
+
+                break;
+        }
+
+        $success = ($response[0]->return->status==200) ? true : false;
+
+      return  api_response($success, $user_verify->otp_code, $response[0]->return->status, $response[0]->return->message);
+    }
+
+    /**
+     * @param AuthForgotPasswordRequest $request
+     * @return JsonResponse
+     */
+    public function forgotPassword(AuthForgotPasswordRequest $request): JsonResponse
+    {
+        // 1. Get Username type:
+        $username = $request->user_name;
+
+        // 2. Check code:
+        $is_correct = UserVerify::where("user_name", $username)
+            ->where("otp_code", $request->otp_code)
+            ->where("created_at", ">", Carbon::now()->subMinutes(5))
+            ->count();
+
+        if ($is_correct == 0) {
+
+            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'username or code is invalid');
+
+        }
+
+        $user = $this->getUser($request->user_name);
+        if (!$user) {
+            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'username is invalid');
+        }
+
+
+        $roles = $user->roles()->pluck('name')->toArray();
+
+        if (!in_array($request->role, $roles)) {
+
+
+            return api_response(false, null,
+                Response::HTTP_FORBIDDEN, 'You do not have permission to access this panel!');
+
+
+        }
+
+
+        $user->roles;
+        // Revoke all tokens...
+        $user->tokens()->where('name', $request->role)->delete();
+        $token = $user->createToken($request->role)->plainTextToken;
+        return api_response(true, [
+            'token' => $token,
+            'user' => $user
+        ], Response::HTTP_OK, 'Token sent.');
 
 
     }
