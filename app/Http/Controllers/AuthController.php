@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 
 /**
@@ -63,7 +64,7 @@ class AuthController extends Controller
         $user = $this->getUser($request->user_name);
 
         if (!$user || !Hash::check($request->password, $user->password))
-            return api_response(false, null, Response::HTTP_UNPROCESSABLE_ENTITY, null, 'username or password is invalid');
+            return api_response( false, null, Response::HTTP_UNPROCESSABLE_ENTITY, null, 'username or password is invalid');
 
         $roles = $user->roles()->pluck('name')->toArray();
 
@@ -99,7 +100,7 @@ class AuthController extends Controller
         $username = $request->user_name;
         $type = $this->getUserNameType($username);
         $is_already_sent = UserVerify::where("user_name", $username)
-            ->where("created_at", ">", Carbon::now()->subMinutes(5))->count();
+            ->where("created_at", ">", Carbon::now()->subMinutes(1))->count();
         if ($is_already_sent) {
             return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'token is already sent');
 
@@ -118,23 +119,24 @@ class AuthController extends Controller
                 $pattern_code = 'verify';
                 $recipient = $username;
                 $pattern_values = [$user_verify->otp_code];
-                $response = $sendSms->sendWithPattern($pattern_code, $recipient, $pattern_values);
-
+                $response_sms = $sendSms->sendWithPattern($pattern_code, $recipient, $pattern_values);
+                $success = ($response_sms[0]->return->status==200) ? true : false;
+                $status=$response_sms[0]->return->status;
+                $message=$response_sms[0]->return->message;
                 break;
 
             case "email":
-//                $mailData = [
-//                    'title' => 'Mail from ehealthoperator.com',
-//                    'body' => 'otp_code: '.$user_verify->otp_code
-//                ];
-//                Mail::to($username)->send(new OtpMail($mailData));
 
+                Mail::to($username)->send(new \App\Mail\SendEmail(['verification_code' => $user_verify->otp_code], 'Verification Code', 'user_verify'));
+                $status=200;
+                $message='email sent.';
+                $success =true;
                 break;
         }
 
-        $success = ($response[0]->return->status==200) ? true : false;
 
-      return  api_response($success, $user_verify->otp_code, $response[0]->return->status, $response[0]->return->message);
+
+      return  api_response($success, null, $status, $message);
     }
 
     /**
