@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Auth\AuthForgotPasswordRequest;
 use App\Http\Requests\Auth\AuthLoginRequest;
 use App\Http\Requests\Auth\AuthSendOtpRequest;
+use App\Http\Requests\Auth\AuthSignRequest;
 use App\Models\User;
 use App\Models\UserVerify;
 use App\Services\SmsService;
@@ -17,12 +18,29 @@ use Illuminate\Support\Facades\Mail;
 
 /**
  * @group Auth
- * @unauthenticated
  */
 class AuthController extends Controller
 {
+    //Checking the existence of the user in the database
+    /**
+     * @param AuthSignRequest $request
+     * @unauthenticated
+     * @return JsonResponse
+     */
+    public function sign(AuthSignRequest $request): JsonResponse
+    {
+        if ($this->getUser($request->user_name)) {
+
+            return api_response(true, ['exist' => true], Response::HTTP_OK);
+
+        }
+        return api_response(true, ['exist' => false], Response::HTTP_OK);
+
+
+    }
     /**
      * @param $user_name
+     * @unauthenticated
      * @return mixed
      */
     public function getUser($user_name): mixed
@@ -39,6 +57,7 @@ class AuthController extends Controller
 
     /**
      * @param $user_name
+     * @unauthenticated
      * @return false|string
      */
     public function getUserNameType($user_name): bool|string
@@ -55,6 +74,7 @@ class AuthController extends Controller
 
     /**
      * @param AuthLoginRequest $request
+     * @unauthenticated
      * @return JsonResponse
      */
     public function login(AuthLoginRequest $request): JsonResponse
@@ -91,6 +111,7 @@ class AuthController extends Controller
 
     /**
      * @param AuthSendOtpRequest $request
+     * @unauthenticated
      * @return JsonResponse
      */
     public function sendOtp(AuthSendOtpRequest $request, SmsService $sendSms)
@@ -100,7 +121,7 @@ class AuthController extends Controller
         $username = $request->user_name;
         $type = $this->getUserNameType($username);
         $is_already_sent = UserVerify::where("user_name", $username)
-            ->where("created_at", ">", Carbon::now()->subMinutes(1))->count();
+            ->where("created_at", ">", Carbon::now()->subMinutes(5))->count();
         if ($is_already_sent) {
             return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'token is already sent');
 
@@ -141,6 +162,7 @@ class AuthController extends Controller
 
     /**
      * @param AuthForgotPasswordRequest $request
+     * @unauthenticated
      * @return JsonResponse
      */
     public function forgotPassword(AuthForgotPasswordRequest $request): JsonResponse
@@ -189,4 +211,14 @@ class AuthController extends Controller
 
 
     }
+    /**
+     * @param $role
+     * @return JsonResponse
+     */
+    public function logout($role): JsonResponse
+    {
+        auth()->user()->tokens()->where('name', $role)->delete();
+        return api_response(true, null, Response::HTTP_OK, 'logged out');
+    }
+
 }

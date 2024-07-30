@@ -80,6 +80,12 @@
                                                                                 <li class="tocify-item level-2" data-unique="auth-POSTapi-auth-forgot-password">
                                 <a href="#auth-POSTapi-auth-forgot-password">POST api/auth/forgot-password</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="auth-POSTapi-auth-sign">
+                                <a href="#auth-POSTapi-auth-sign">POST api/auth/sign</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="auth-GETapi-auth-logout--role-">
+                                <a href="#auth-GETapi-auth-logout--role-">GET api/auth/logout/{role}</a>
+                            </li>
                                                                         </ul>
                             </ul>
             </div>
@@ -91,7 +97,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 21, 2024</li>
+        <li>Last updated: July 30, 2024</li>
     </ul>
 </div>
 
@@ -132,9 +138,9 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"incidunt\",
-    \"password\": \"\\\"cp;rjSZ\",
-    \"role\": \"ad\"
+    \"user_name\": \"debitis\",
+    \"password\": \"guz(?MRh:T\'\",
+    \"role\": \"et\"
 }"
 </code></pre></div>
 
@@ -150,9 +156,9 @@ const headers = {
 };
 
 let body = {
-    "user_name": "incidunt",
-    "password": "\"cp;rjSZ",
-    "role": "ad"
+    "user_name": "debitis",
+    "password": "guz(?MRh:T'",
+    "role": "et"
 };
 
 fetch(url, {
@@ -262,10 +268,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-login"
-               value="incidunt"
+               value="debitis"
                data-component="body">
     <br>
-<p>Example: <code>incidunt</code></p>
+<p>Example: <code>debitis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -273,10 +279,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-login"
-               value=""cp;rjSZ"
+               value="guz(?MRh:T'"
                data-component="body">
     <br>
-<p>Example: <code>"cp;rjSZ</code></p>
+<p>Example: <code>guz(?MRh:T'</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -284,10 +290,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-login"
-               value="ad"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>ad</code></p>
+<p>Example: <code>et</code></p>
         </div>
         </form>
 
@@ -308,7 +314,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"rerum\"
+    \"user_name\": \"enim\"
 }"
 </code></pre></div>
 
@@ -324,7 +330,7 @@ const headers = {
 };
 
 let body = {
-    "user_name": "rerum"
+    "user_name": "enim"
 };
 
 fetch(url, {
@@ -349,10 +355,10 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Undefined variable $response&quot;,
+    &quot;message&quot;: &quot;Undefined variable $success&quot;,
     &quot;exception&quot;: &quot;ErrorException&quot;,
     &quot;file&quot;: &quot;/var/www/html/app/Http/Controllers/AuthController.php&quot;,
-    &quot;line&quot;: 136,
+    &quot;line&quot;: 160,
     &quot;trace&quot;: [
         {
             &quot;file&quot;: &quot;/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php&quot;,
@@ -363,7 +369,7 @@ access-control-allow-origin: *
         },
         {
             &quot;file&quot;: &quot;/var/www/html/app/Http/Controllers/AuthController.php&quot;,
-            &quot;line&quot;: 136,
+            &quot;line&quot;: 160,
             &quot;function&quot;: &quot;Illuminate\\Foundation\\Bootstrap\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Bootstrap\\HandleExceptions&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
@@ -847,10 +853,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-send-otp"
-               value="rerum"
+               value="enim"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>enim</code></p>
         </div>
         </form>
 
@@ -871,9 +877,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"facilis\",
-    \"otp_code\": \"exercitationem\",
-    \"role\": \"suscipit\"
+    \"user_name\": \"aut\",
+    \"otp_code\": \"est\",
+    \"role\": \"sequi\"
 }"
 </code></pre></div>
 
@@ -889,9 +895,9 @@ const headers = {
 };
 
 let body = {
-    "user_name": "facilis",
-    "otp_code": "exercitationem",
-    "role": "suscipit"
+    "user_name": "aut",
+    "otp_code": "est",
+    "role": "sequi"
 };
 
 fetch(url, {
@@ -1001,10 +1007,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-forgot-password"
-               value="facilis"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>facilis</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>otp_code</code></b>&nbsp;&nbsp;
@@ -1012,10 +1018,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="otp_code"                data-endpoint="POSTapi-auth-forgot-password"
-               value="exercitationem"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>exercitationem</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -1023,12 +1029,310 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-forgot-password"
-               value="suscipit"
+               value="sequi"
                data-component="body">
     <br>
-<p>Example: <code>suscipit</code></p>
+<p>Example: <code>sequi</code></p>
         </div>
         </form>
+
+                    <h2 id="auth-POSTapi-auth-sign">POST api/auth/sign</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-auth-sign">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/auth/sign" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"user_name\": \"vel\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/auth/sign"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "user_name": "vel"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-auth-sign">
+            <blockquote>
+            <p>Example response (422):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: false,
+    &quot;message&quot;: null,
+    &quot;data&quot;: null,
+    &quot;errors&quot;: &quot;Please enter the correct username&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-auth-sign" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-auth-sign"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-auth-sign"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-auth-sign" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-auth-sign">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-auth-sign" data-method="POST"
+      data-path="api/auth/sign"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-auth-sign', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-auth-sign"
+                    onclick="tryItOut('POSTapi-auth-sign');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-auth-sign"
+                    onclick="cancelTryOut('POSTapi-auth-sign');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-auth-sign"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/auth/sign</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-auth-sign"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-auth-sign"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>user_name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="user_name"                data-endpoint="POSTapi-auth-sign"
+               value="vel"
+               data-component="body">
+    <br>
+<p>Example: <code>vel</code></p>
+        </div>
+        </form>
+
+                    <h2 id="auth-GETapi-auth-logout--role-">GET api/auth/logout/{role}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-auth-logout--role-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/auth/logout/est" \
+    --header "Authorization: Bearer 6Dg6f35814ZhePakcdEVbav" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/auth/logout/est"
+);
+
+const headers = {
+    "Authorization": "Bearer 6Dg6f35814ZhePakcdEVbav",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-auth-logout--role-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-auth-logout--role-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-auth-logout--role-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-auth-logout--role-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-auth-logout--role-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-auth-logout--role-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-auth-logout--role-" data-method="GET"
+      data-path="api/auth/logout/{role}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-auth-logout--role-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-auth-logout--role-"
+                    onclick="tryItOut('GETapi-auth-logout--role-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-auth-logout--role-"
+                    onclick="cancelTryOut('GETapi-auth-logout--role-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-auth-logout--role-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/auth/logout/{role}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-auth-logout--role-"
+               value="Bearer 6Dg6f35814ZhePakcdEVbav"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer 6Dg6f35814ZhePakcdEVbav</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-auth-logout--role-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-auth-logout--role-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="role"                data-endpoint="GETapi-auth-logout--role-"
+               value="est"
+               data-component="url">
+    <br>
+<p>Example: <code>est</code></p>
+            </div>
+                    </form>
 
             
 
