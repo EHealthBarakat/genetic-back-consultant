@@ -28,9 +28,26 @@ class AppointmentController extends Controller
     }
 
 
-    public function create()
+    /**
+     * @return JsonResponse
+     */
+    public function create(): JsonResponse
     {
-        //
+        $formFields = [
+            [
+                'label' => 'روز مراجعه',
+                'type' => 'date',
+                'name' => 'date',
+                'required' => true,
+            ],
+            [
+                'label' => 'ساعت مراجعه',
+                'type' => 'time',
+                'name' => 'time',
+                'required' => true,
+            ],
+        ];
+        return api_response(true, $formFields, Response::HTTP_OK, '');
     }
 
 

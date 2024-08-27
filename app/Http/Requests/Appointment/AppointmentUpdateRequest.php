@@ -23,7 +23,7 @@ class AppointmentUpdateRequest extends FormRequest
     {
         return [
             'patient_id' => 'required|exists:patients,id',
-            'Referred_at' => 'required|date_format:Y-m-d H:i:s',
+            'referred_at' => 'required|date_format:Y-m-d H:i:s',
         ];
     }
 }
