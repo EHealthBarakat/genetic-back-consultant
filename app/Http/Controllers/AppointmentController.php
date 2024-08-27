@@ -62,7 +62,7 @@ class AppointmentController extends Controller
             $appointment = Appointment::query()->create([
                 'patient_id' => $request->patient_id,
                 'creator_id' => Auth::id(),
-                'Referred_at' => $request->Referred_at
+                'referred_at' => $request->referred_at
 
             ]);
 
@@ -73,7 +73,7 @@ class AppointmentController extends Controller
             return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, 'خطایی رخ داده است!');
         }
         return
-            api_response(true, $appointment, Response::HTTP_CREATED, 'اطلاعات بیمار ثیت شد!');
+            api_response(true, $appointment, Response::HTTP_CREATED, 'اطلاعات ثبت شد!');
     }
 
 
@@ -101,7 +101,7 @@ class AppointmentController extends Controller
             $appointment->update([
                 'patient_id' => $request->patient_id,
                 'creator_id' => Auth::id(),
-                'Referred_at' => $request->Referred_at
+                'referred_at' => $request->referred_at
 
             ]);
 

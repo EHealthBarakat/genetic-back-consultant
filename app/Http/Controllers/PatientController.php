@@ -230,7 +230,7 @@ class PatientController extends Controller
             return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, 'خطایی رخ داده است!');
         }
         return
-            api_response(true, $patient->load(['user', 'city']), Response::HTTP_CREATED, 'اطلاعات بیمار ثیت شد!');
+            api_response(true, $patient->load(['user', 'city']), Response::HTTP_CREATED, 'اطلاعات بیمار ثبت شد!');
     }
 
 

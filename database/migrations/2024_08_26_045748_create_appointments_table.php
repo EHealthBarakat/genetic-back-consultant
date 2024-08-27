@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary()->unique();
             $table->foreignUuid('creator_id')->constrained('users')->restrictOnDelete()->cascadeOnUpdate();
             $table->foreignUuid('patient_id')->constrained('patients')->restrictOnDelete()->cascadeOnUpdate();
-            $table->dateTime('Referred_at');
+            $table->dateTime('referred_at');
             $table->timestamps();
             $table->softDeletes();
         });
