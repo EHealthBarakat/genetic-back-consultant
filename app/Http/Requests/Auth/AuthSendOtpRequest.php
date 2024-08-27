@@ -2,12 +2,10 @@
 
 namespace App\Http\Requests\Auth;
 
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\Exceptions\HttpResponseException;
-use Illuminate\Http\Response;
+use App\Http\Requests\BaseRequest;
 
-class AuthSendOtpRequest extends FormRequest
+
+class AuthSendOtpRequest extends BaseRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,5 +22,6 @@ class AuthSendOtpRequest extends FormRequest
             'user_name' => 'required|string',
         ];
     }
+
 
 }

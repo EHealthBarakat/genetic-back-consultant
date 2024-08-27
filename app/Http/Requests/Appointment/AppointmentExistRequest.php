@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests\Appointment;
 
-use App\Http\Requests\BaseRequest;
+use Illuminate\Foundation\Http\FormRequest;
 
-
-class AuthLoginRequest extends BaseRequest
+class AppointmentExistRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,10 +22,7 @@ class AuthLoginRequest extends BaseRequest
     public function rules(): array
     {
         return [
-            'user_name' => 'required|string',
-            'password' => 'required|string',
-            'role'=>'required|string|exists:roles,name',
+            'patient_id' => 'required|exists:patients,id',
         ];
     }
-
 }

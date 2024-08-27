@@ -4,7 +4,7 @@ namespace App\Enums;
 
 enum UserGenderEnum: string
 {
-    case FEMALE = 'female';
-    case MALE = 'male';
+    case FEMALE = 'خانم';
+    case MALE = 'آقا';
 
 }

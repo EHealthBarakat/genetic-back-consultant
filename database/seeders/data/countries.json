@@ -1,0 +1,1946 @@
+[
+    {
+        "id": "0065b707-7624-436f-a292-3313bdc770da",
+        "name": "میکرونزی، ایالات فدرال",
+        "nationality_name": "میکرونزی",
+        "iso_code": "FM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "00fc767a-edb9-4d37-89e3-247fa992b567",
+        "name": "سیشل",
+        "nationality_name": "سیشلی",
+        "iso_code": "SC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "0167a0b2-e2d6-4781-a3dc-45c66f7f64f9",
+        "name": "مونتسرات",
+        "nationality_name": "بریتانیایی (مونتسرات)",
+        "iso_code": "MS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "019ae388-51c7-4fb7-a86c-474390fe571d",
+        "name": "مالی",
+        "nationality_name": "Malian",
+        "iso_code": "ML",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "01f15998-36b5-413e-9150-0f28cca577ed",
+        "name": "تووالو",
+        "nationality_name": "Tuvaluan",
+        "iso_code": "TV",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "05961e88-490e-4a3b-a42a-70e4d633d3ee",
+        "name": "Virgin Islands, U.S.",
+        "nationality_name": "American (Virgin Islands, U.S.)",
+        "iso_code": "VI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "05f339c6-6c47-48c5-a0b3-d595c22916f5",
+        "name": "گینه بیسائو",
+        "nationality_name": "Bissau-Guinean",
+        "iso_code": "GW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "07502bcd-6a31-47de-aeec-c46f269a6838",
+        "name": "لیتوانی",
+        "nationality_name": "Lithuanian",
+        "iso_code": "LT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "07b75a78-2ca0-4c1c-8e2b-1677e9fb4ebb",
+        "name": "سنت وینسنت و گرنادین‌ها",
+        "nationality_name": "Vincentian",
+        "iso_code": "VC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "0aa89a21-5357-464a-b9db-9809222fa197",
+        "name": "Guam",
+        "nationality_name": "Guamanian",
+        "iso_code": "GU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "0c8c1f1c-d2b3-4ce1-ae0b-760029772925",
+        "name": "رومانی",
+        "nationality_name": "Romanian",
+        "iso_code": "RO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "0c9559ae-5363-49d6-8c87-8e7316498b3f",
+        "name": "گامبیا",
+        "nationality_name": "Gambian",
+        "iso_code": "GM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "0da64e5f-8a45-4fc5-9249-b1599ce77ed4",
+        "name": "اسلوونی",
+        "nationality_name": "اسلوونی",
+        "iso_code": "SI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "0e030c2f-9f8d-46f7-9d0d-f2fdb96844be",
+        "name": "Gibraltar",
+        "nationality_name": "British (Gibraltar)",
+        "iso_code": "GI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "1494d0a9-ce9e-4dc5-8ce9-23f08d4a6467",
+        "name": "گینه استوایی",
+        "nationality_name": "Equatoguinean",
+        "iso_code": "GQ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "1515ebc0-ce06-4bc0-b625-d04d01ac871b",
+        "name": "پالائو",
+        "nationality_name": "Palauan",
+        "iso_code": "PW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "152f054d-abd9-45e4-85b1-5c78b96ce567",
+        "name": "Cape Verde",
+        "nationality_name": "Cape Verde",
+        "iso_code": "CV",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "17dfba25-8648-4d25-9f18-7d5d6b4a00b3",
+        "name": "کرواسی",
+        "nationality_name": "Croatian",
+        "iso_code": "HR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "18261aa9-94a2-4a00-a1fb-0ce46c95cc47",
+        "name": "United States Minor Outlying Islands",
+        "nationality_name": "American (United States Minor Outlying Islands)",
+        "iso_code": "UM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "19111ddc-3b87-47ff-a6f1-5b2c6cd5ce76",
+        "name": "Cayman Islands",
+        "nationality_name": "British (Cayman Islands)",
+        "iso_code": "KY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "19607bff-7b52-4e36-aa22-889e556f728c",
+        "name": "سان مارینو",
+        "nationality_name": "سان مارینو",
+        "iso_code": "SM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "1ca94709-db9c-494e-92c5-bdcb696d10ef",
+        "name": "قزاقستان",
+        "nationality_name": "Kazakhstani",
+        "iso_code": "KZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "1d37ab54-aae0-4a20-858e-865fe2a62a95",
+        "name": "موزامبیک",
+        "nationality_name": "Mozambican\t",
+        "iso_code": "MZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "1e00be52-46af-4378-bd7b-d1045033fc28",
+        "name": "برزیل",
+        "nationality_name": "Brazilian",
+        "iso_code": "BR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "1f5e1c1e-7e32-4be1-acb4-177e0c7b126c",
+        "name": "کامبوج",
+        "nationality_name": "Cambodian",
+        "iso_code": "KH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2066096d-5caa-4231-8815-1759278866df",
+        "name": "Palestinian Territory, Occupied",
+        "nationality_name": "Palestinian Territory, Occupied",
+        "iso_code": "PS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "20790d76-2e52-4d66-84db-4626e37cec7f",
+        "name": "آذربایجان",
+        "nationality_name": "Azerbaijani",
+        "iso_code": "AZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "214617ed-a1b8-4e5e-be5c-e5770c1b75b0",
+        "name": "Cocos (Keeling) Islands",
+        "nationality_name": "Cocos (Keeling) Islands",
+        "iso_code": "CC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "23461fa1-5301-4225-babc-f952980f0ab3",
+        "name": "اوکراین",
+        "nationality_name": "Ukrainian",
+        "iso_code": "UA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "23947612-ee30-4640-aff2-5727ec1d6731",
+        "name": "ترینیداد و توباگو",
+        "nationality_name": "Trinidadian and Tobagonian",
+        "iso_code": "TT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "24dd2778-0d53-4c2e-b259-630b2467965b",
+        "name": "بوتان",
+        "nationality_name": "Bhutanese",
+        "iso_code": "BT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2710c0cd-0259-4e94-821a-a70dadd47687",
+        "name": "لوکزامبورگ",
+        "nationality_name": "لوکزامبورگ",
+        "iso_code": "LU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "27ce1bec-8f18-47d3-a5da-28d820178922",
+        "name": "South Georgia and the South Sandwich Islands",
+        "nationality_name": "British (South Georgia and the South Sandwich Islands)",
+        "iso_code": "GS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "283f5d21-94e4-4926-a3bd-cde02354761b",
+        "name": "Brunei Darussalam",
+        "nationality_name": "Bruneian",
+        "iso_code": "BN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "29328163-f5bc-4c58-af5d-0aa907cdef7e",
+        "name": "اسپانیا",
+        "nationality_name": "Spanish",
+        "iso_code": "ES",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2a29eeff-9dbb-4930-930a-473d94f99f52",
+        "name": "گواتمالا",
+        "nationality_name": "Guatemalan",
+        "iso_code": "GT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2a4406f2-1a00-4b19-8cad-eb3eb25376cb",
+        "name": "ایسلند",
+        "nationality_name": "Icelandic",
+        "iso_code": "IS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2a9d1685-192e-4e31-acda-cfdd05178fec",
+        "name": "French Southern Territories",
+        "nationality_name": "French Southern Territories",
+        "iso_code": "TF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2cadbb67-672b-4194-9b9e-edd133c482f5",
+        "name": "Aruba",
+        "nationality_name": "Aruba",
+        "iso_code": "AW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2db0c32e-5cf1-4f30-b857-8e728431bead",
+        "name": "بورکینافاسو",
+        "nationality_name": "Burkinabe",
+        "iso_code": "BF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2eb121f7-f021-48a3-a941-8fa0589f3866",
+        "name": "Antarctica",
+        "nationality_name": "Antarctica",
+        "iso_code": "AQ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2eda1b9c-e6be-4c97-89b9-6065ddffa69e",
+        "name": "سریلانکا",
+        "nationality_name": "Sri Lankan",
+        "iso_code": "LK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2ef78a23-cbeb-4af9-b7a1-d2a2041e7eff",
+        "name": "مغولستان",
+        "nationality_name": "Mongolian",
+        "iso_code": "MN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "2fdc0ed0-7a8c-4dd8-a81e-feae50ea97f6",
+        "name": "یونان",
+        "nationality_name": "Greek",
+        "iso_code": "GR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "311e2dec-c6e2-4b7e-a1c0-620cd54775c0",
+        "name": "Bermuda",
+        "nationality_name": "British (Bermuda)",
+        "iso_code": "BM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "34658449-9539-4898-8350-ae9054d2713f",
+        "name": "Syrian Arab Republic",
+        "nationality_name": "Syrian",
+        "iso_code": "SY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "35ccb05a-e2a4-4b23-aca7-bcd356c29ccb",
+        "name": "Moldova, Republic of",
+        "nationality_name": "Romanian",
+        "iso_code": "MD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "35f64209-eb7a-4d8e-9506-568b9f498614",
+        "name": "بلغارستان",
+        "nationality_name": "Bulgarian",
+        "iso_code": "BG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3613ef4b-7713-4e30-83f5-bb0b7277cccb",
+        "name": "عربستان سعودی",
+        "nationality_name": "Saudi",
+        "iso_code": "SA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3637f808-cf88-49e5-ae72-17050d4f5f5c",
+        "name": "چین",
+        "nationality_name": "Chinese",
+        "iso_code": "CN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "365beb66-4bb0-406a-b848-e7c7c1b4c88f",
+        "name": "Macao",
+        "nationality_name": "Macau",
+        "iso_code": "MO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "373f9933-5d7c-483f-9f7a-f6aa0f324124",
+        "name": "Puerto Rico",
+        "nationality_name": "Puerto Rican",
+        "iso_code": "PR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3775c1b8-b931-4c41-af65-8a1c3d027618",
+        "name": "Martinique",
+        "nationality_name": "Martinique",
+        "iso_code": "MQ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "382822f6-9940-4fd5-b5fe-ff9d6427187a",
+        "name": "آنگولا",
+        "nationality_name": "Angolan ",
+        "iso_code": "AO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3958a2ac-83fc-4892-9b0f-fa3c59e6a901",
+        "name": "اتیوپی",
+        "nationality_name": "Ethiopian",
+        "iso_code": "ET",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3a1203ec-ab5b-44c8-81cd-3449bdf806ee",
+        "name": "نیجر",
+        "nationality_name": "Nigerian",
+        "iso_code": "NE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3cee08c3-0135-46bf-bf6c-b993e5a9c8d8",
+        "name": "بلیز",
+        "nationality_name": "Belizean",
+        "iso_code": "BZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3d351fe2-7f1a-4b95-923d-0fba75f58fc8",
+        "name": "الجزایر",
+        "nationality_name": "الجزایری",
+        "iso_code": "DZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3d408e79-0094-4423-b5cd-916e02067f6a",
+        "name": "تونگا",
+        "nationality_name": "Tongan",
+        "iso_code": "TO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3e2d6bb0-dc64-4982-b338-3652e1b99f88",
+        "name": "اتریش",
+        "nationality_name": "اتریش",
+        "iso_code": "AT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "3e6b1cc7-796b-4048-ae9c-1500ec6d842f",
+        "name": "جمهوری آفریقای مرکزی",
+        "nationality_name": "جمهوری آفریقای مرکزی",
+        "iso_code": "CF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "409f3b73-9acb-4797-b443-bc6a731a5de0",
+        "name": "French Polynesia",
+        "nationality_name": "French Polynesia",
+        "iso_code": "PF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "45cb3aab-e70e-4206-b94e-2b9804736819",
+        "name": "Congo, The Democratic Republic of the",
+        "nationality_name": "Democratic Republic of the Congo",
+        "iso_code": "CD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4621c09c-92c7-40d7-9c11-f414dfce79c6",
+        "name": "سومالی",
+        "nationality_name": "Somali",
+        "iso_code": "SO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "46a2e9c3-a3c2-46b1-ba91-3f5e915a5d7e",
+        "name": "نامیبیا",
+        "nationality_name": "Namibian",
+        "iso_code": "NA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "47f5f6f4-f061-4de2-95b0-94e3db469838",
+        "name": "نائورو",
+        "nationality_name": "Nauruan",
+        "iso_code": "NR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "488e543a-269b-4eb1-858b-e330da57e621",
+        "name": "Cote D\"Ivoire",
+        "nationality_name": "Ivorian",
+        "iso_code": "CI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "489245bd-3337-4355-84f0-a78210eeb98d",
+        "name": "پرتغال",
+        "nationality_name": "Portuguese",
+        "iso_code": "PT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "490d671d-5131-42d7-bd57-11cc89bc360d",
+        "name": "موریس",
+        "nationality_name": "موریس",
+        "iso_code": "MU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "49ed9196-cc29-4a53-bcda-f311623779b3",
+        "name": "سودان",
+        "nationality_name": "Sudanese",
+        "iso_code": "SD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4a84b3d9-426f-489b-8acf-86fbe5c59cde",
+        "name": "آفریقای جنوبی",
+        "nationality_name": "South African",
+        "iso_code": "ZA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4b428930-7c1e-4349-9199-3009703b8170",
+        "name": "Jersey",
+        "nationality_name": "Jersey",
+        "iso_code": "JE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4cb751d5-e135-40a1-90cd-d390d66d0a16",
+        "name": "اردن",
+        "nationality_name": "Jordanian",
+        "iso_code": "JO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4e0e4c80-daae-4dda-82c7-952d6d04cb7b",
+        "name": "موناکو",
+        "nationality_name": "Monégasque",
+        "iso_code": "MC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4e9e15a2-32a4-4787-8b5c-59ffa490366e",
+        "name": "New Caledonia",
+        "nationality_name": "New Caledonian",
+        "iso_code": "NC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4f5e9559-4326-4273-8cbe-1fab108f6cd8",
+        "name": "غنا",
+        "nationality_name": "Ghanaian",
+        "iso_code": "GH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4fb06b84-dce2-40e6-8ceb-b3a34ff36657",
+        "name": "Tokelau",
+        "nationality_name": "Tokelauan",
+        "iso_code": "TK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "4fda0488-8065-4b13-b143-cdbddd993bde",
+        "name": "قطر",
+        "nationality_name": "Qatari",
+        "iso_code": "QA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "51820cfa-46bc-41aa-adf1-a3e15f7f5994",
+        "name": "نیکاراگوئه",
+        "nationality_name": "Nicaraguan",
+        "iso_code": "NI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "525831fa-4ddb-4c52-aa42-eb2e2cc07b57",
+        "name": "بلژیک",
+        "nationality_name": "Belgian",
+        "iso_code": "BE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "544fd6ce-1892-46e8-94fa-00d8299a8e48",
+        "name": "استرالیا",
+        "nationality_name": "Australian",
+        "iso_code": "AU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "554e0f98-4733-4813-accc-5f9c09968307",
+        "name": "بوسنی و هرزگوین",
+        "nationality_name": "بوسنی و هرزگوین",
+        "iso_code": "BA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "55b89a79-395f-4de6-b4c4-75be3cc1c721",
+        "name": "ترکمنستان",
+        "nationality_name": "Turkmenistani",
+        "iso_code": "TM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5a1ce432-3614-4fc4-bb0b-e6488fcbac16",
+        "name": "مالدیو",
+        "nationality_name": "Maldivian",
+        "iso_code": "MV",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5a956025-48d3-4859-b662-3e2a8e8915ed",
+        "name": "آلمان",
+        "nationality_name": "German",
+        "iso_code": "DE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5ada31d9-8d0b-4df1-a714-e6fed07e8b3f",
+        "name": "Isle of Man",
+        "nationality_name": "British (Isle of Man)",
+        "iso_code": "IM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5d18a820-d470-4ee9-9961-9bde0b725f0a",
+        "name": "هائیتی",
+        "nationality_name": "Haitian",
+        "iso_code": "HT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5d3ad392-ef68-45b2-b82f-4918bc150467",
+        "name": "کنیا",
+        "nationality_name": "Kenyan",
+        "iso_code": "KE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5d7bd62a-7ca9-485e-aa6e-727fc1b3670a",
+        "name": "Christmas Island",
+        "nationality_name": "Christmas Island",
+        "iso_code": "CX",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5e239daf-6cfd-4bd5-8991-297a2184111b",
+        "name": "سائوتومه و پرینسیپ",
+        "nationality_name": "Sao Tomean",
+        "iso_code": "ST",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5e48f3ef-0c75-4ead-81fd-6c3be2c7bd63",
+        "name": "ماداگاسکار",
+        "nationality_name": "Malagasy",
+        "iso_code": "MG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5e575b68-026e-4f43-8b93-76a7c4e3dc13",
+        "name": "Korea, Republic of",
+        "nationality_name": "South Korean",
+        "iso_code": "KR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5fae7de5-08cd-470c-b73a-99e566dec804",
+        "name": "ایتالیا",
+        "nationality_name": "Italian",
+        "iso_code": "IT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "5ffd76de-c5a2-4e51-b05c-e050e0fc000d",
+        "name": "گابن",
+        "nationality_name": "Gabonese",
+        "iso_code": "GA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "61d78e14-6980-46f3-8a3d-7d162ae8a212",
+        "name": "تایلند",
+        "nationality_name": "Thai",
+        "iso_code": "TH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "642c0ef9-1f88-49b2-ba26-da781b9fad3d",
+        "name": "کوبا",
+        "nationality_name": "Cuban",
+        "iso_code": "CU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "66be32f4-8621-4676-8f90-a0e6238bbb14",
+        "name": "Libyan Arab Jamahiriya",
+        "nationality_name": "Libyan",
+        "iso_code": "LY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "67348153-a110-4a92-ac9a-ba039d4300e9",
+        "name": "میانمار",
+        "nationality_name": "میانمار",
+        "iso_code": "MM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6a878a0a-f3ba-47d9-bb0d-af6f5b78582f",
+        "name": "پاکستان",
+        "nationality_name": "Pakistani",
+        "iso_code": "PK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6acd367f-f928-4bfb-91e7-91620f866def",
+        "name": "فیجی",
+        "nationality_name": "Fijian",
+        "iso_code": "FJ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6b5fae9c-0fe9-46fa-932f-e3f529bf3f35",
+        "name": "Zimbabwe",
+        "nationality_name": "Zimbabwean",
+        "iso_code": "ZW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6c8c777d-0433-405f-91a8-d96a9fdef253",
+        "name": "جمهوری چک",
+        "nationality_name": "Czech",
+        "iso_code": "CZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6d1b2e37-9ec6-4c08-be90-73c485b8963d",
+        "name": "Taiwan, Province of China",
+        "nationality_name": "Taiwanese",
+        "iso_code": "TW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6d98883a-e09d-4ba7-95df-ad9a2855c66d",
+        "name": "تاجیکستان",
+        "nationality_name": "Tajikistani",
+        "iso_code": "TJ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6e27d2fb-8571-4731-8d6f-7bbbd514bbe6",
+        "name": "Virgin Islands, British",
+        "nationality_name": "British (Virgin Islands)",
+        "iso_code": "VG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "6fd2c50b-dca3-46f2-a06a-ff8b5212172e",
+        "name": "Northern Mariana Islands",
+        "nationality_name": "Northern Mariana Islands",
+        "iso_code": "MP",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "71b4a597-d33c-40f9-afd1-2db516300e13",
+        "name": "مالزی",
+        "nationality_name": "Malaysian",
+        "iso_code": "MY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "74984a19-8eef-4e97-af09-64b127dc13c9",
+        "name": "اسلواکی",
+        "nationality_name": "Slovak",
+        "iso_code": "SK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "74c5c278-aa66-4be8-bc6a-fe2171fca727",
+        "name": "عمان",
+        "nationality_name": "Omani",
+        "iso_code": "OM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "74fdbacd-13b1-449b-9e46-fd2f341218bc",
+        "name": "Saint Helena",
+        "nationality_name": "Saint Helena",
+        "iso_code": "SH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "760a50f3-ca51-4f0c-9501-f2d02d9bcb50",
+        "name": "ساموآ",
+        "nationality_name": "Samoan",
+        "iso_code": "WS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "779ae035-ba9d-4abd-9ff5-f47699b7155a",
+        "name": "فنلاند",
+        "nationality_name": "Finnish",
+        "iso_code": "FI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "78e0f93d-55e6-4309-a813-b79a9d367318",
+        "name": "سورینام",
+        "nationality_name": "Surinamese",
+        "iso_code": "SR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "7b4e6afd-13c2-498e-8e40-a36251e1c5b3",
+        "name": "دانمارک",
+        "nationality_name": "Danish",
+        "iso_code": "DK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "7b9f9b1b-ff65-496d-9788-e9c565673c69",
+        "name": "سیرالئون",
+        "nationality_name": "Sierra Leonean",
+        "iso_code": "SL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "7dc31d8a-a129-40eb-9b62-63691ba1be37",
+        "name": "Macedonia, The Former Yugoslav Republic of",
+        "nationality_name": "Macedonia, The Former Yugoslav Republic of",
+        "iso_code": "MK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "7ee07ae7-885a-40f5-b1b3-32f3ecb98326",
+        "name": "سوئد",
+        "nationality_name": "Swedish",
+        "iso_code": "SE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "7fabe8c1-f5a7-4073-9059-48cf2d395bf1",
+        "name": "فرانسه",
+        "nationality_name": "French",
+        "iso_code": "FR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "803683ab-a9f2-414d-be9b-f2bd05ea00f1",
+        "name": "Korea, Democratic People\"S Republic of",
+        "nationality_name": "Korean",
+        "iso_code": "KP",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "80389143-33e1-432c-9d89-02543a0f17d3",
+        "name": "باربادوس",
+        "nationality_name": "Barbadian",
+        "iso_code": "BB",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "813eeaa0-78a2-4059-8400-9d4008391a28",
+        "name": "اسرائیل",
+        "nationality_name": "Israeli",
+        "iso_code": "IL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "850b2145-b81f-4852-ba03-ff34b74701aa",
+        "name": "Mayotte",
+        "nationality_name": "Mayotte",
+        "iso_code": "YT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8531572a-ae41-443f-9c4f-3a68ec2cea99",
+        "name": "RWANDA",
+        "nationality_name": "Rwandan ",
+        "iso_code": "RW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8656f5fa-920a-4b32-a7c4-6acd079442d7",
+        "name": "Svalbard and Jan Mayen",
+        "nationality_name": "Svalbard and Jan Mayen",
+        "iso_code": "SJ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "86e08268-7386-4526-b399-5d0bd2e739a4",
+        "name": "ترکیه",
+        "nationality_name": "Turkish",
+        "iso_code": "TR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "887b6519-a9dc-46f0-a4c6-1ed8123eba63",
+        "name": "ایرلند",
+        "nationality_name": "Irish",
+        "iso_code": "IE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "88e681a8-9704-4327-af2d-7b205e1c94c5",
+        "name": "هند",
+        "nationality_name": "Indian",
+        "iso_code": "IN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8b57531b-611e-4e68-a28e-9fca2860a016",
+        "name": "Swaziland",
+        "nationality_name": "Swazi",
+        "iso_code": "SZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8b7f56a2-7e9f-4a23-be28-2aac8c21af93",
+        "name": "Heard Island and Mcdonald Islands",
+        "nationality_name": "Australian (Heard Island and Mcdonald Islands)",
+        "iso_code": "HM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8ba916ea-8bb2-4350-9b7d-0a50eef72807",
+        "name": "سنت لوسیا",
+        "nationality_name": "Saint Lucian",
+        "iso_code": "LC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8be856ab-2949-4190-b40e-2a0d596d19f2",
+        "name": "کویت",
+        "nationality_name": "Kuwaiti",
+        "iso_code": "KW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8e483599-429a-4f65-b3d4-ccc9e67e1eea",
+        "name": "Viet Nam",
+        "nationality_name": "Vietnamese",
+        "iso_code": "VN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "8e729b6f-4af2-4271-9eed-66fc0dd437d0",
+        "name": "Tanzania, United Republic of",
+        "nationality_name": "Tanzanian",
+        "iso_code": "TZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "90e1756b-a7bc-4490-99a8-7c1efab1eb74",
+        "name": "Zambia",
+        "nationality_name": "Zambian",
+        "iso_code": "ZM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9172fdbe-64e9-403f-b2cc-50334508df76",
+        "name": "جزایر مارشال",
+        "nationality_name": "Marshallese",
+        "iso_code": "MH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "922e3505-00a3-41aa-b253-5397ad0e9095",
+        "name": "کنگو",
+        "nationality_name": "کنگو",
+        "iso_code": "CG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "93081dd7-1dbe-463d-b260-0b78f899df26",
+        "name": "Cook Islands",
+        "nationality_name": "Cook Islands",
+        "iso_code": "CK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "93f15cda-d944-4d8b-b008-975d9a5d6d81",
+        "name": "فیلیپین",
+        "nationality_name": "Philippine",
+        "iso_code": "PH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "948f4fa5-a3e3-4963-a046-c178c57e3d67",
+        "name": "Bouvet Island",
+        "nationality_name": "Norwegian (Bouvet Island)",
+        "iso_code": "BV",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "94e1fb9e-63a0-47e0-a641-af6f6df4eb67",
+        "name": "کومور",
+        "nationality_name": "Comorian",
+        "iso_code": "KM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "95d5292f-a845-48ca-9241-81162c770702",
+        "name": "السالوادور",
+        "nationality_name": "Salvadorian",
+        "iso_code": "SV",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "96455c44-9f12-4205-bffe-e6e8b23aa4ce",
+        "name": "اریتره",
+        "nationality_name": "Eritrean",
+        "iso_code": "ER",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "96b3876a-fed4-4fa8-a1a5-eea624d66b5c",
+        "name": "American Samoa",
+        "nationality_name": "American Samoan",
+        "iso_code": "AS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "971fa7a8-e869-49d4-a2ea-a3bb0d8324eb",
+        "name": "گرجستان",
+        "nationality_name": "Georgian",
+        "iso_code": "GE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "985db447-07a1-40ab-9b6c-8a73d69a1207",
+        "name": "لتونی",
+        "nationality_name": "Latvian",
+        "iso_code": "LV",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "987b4f05-0a93-4323-a7ba-01ae089f3037",
+        "name": "شیلی",
+        "nationality_name": "Chilean",
+        "iso_code": "CL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "98ca00a6-4f76-4ebe-bced-1eb13c4777cb",
+        "name": "بوتسوانا",
+        "nationality_name": "Batswana",
+        "iso_code": "BW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "98f3785e-3afe-4f14-b498-33142b381169",
+        "name": "دومینیکا",
+        "nationality_name": "Dominican",
+        "iso_code": "DM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9ba3ad19-d808-4a36-9919-711ee7fc37d7",
+        "name": "هندوراس",
+        "nationality_name": "Honduran",
+        "iso_code": "HN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9bdd21f0-81bf-4d47-9690-e7117060f413",
+        "name": "ایران",
+        "nationality_name": "ایرانی",
+        "iso_code": "IR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9c9bace1-fec2-4eab-b6a5-02445b8f8c6f",
+        "name": "بنین",
+        "nationality_name": "Beninese",
+        "iso_code": "BJ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9cd5dce9-d173-43e0-b7ff-8dd71c12a74e",
+        "name": "مالاوی",
+        "nationality_name": "Malawian",
+        "iso_code": "MW",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9d1ddb79-75dd-4aeb-be53-ea11335c91bc",
+        "name": "لیبریا",
+        "nationality_name": "Liberian",
+        "iso_code": "LR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9f5e1fc1-e43c-4a3f-bf25-e8ebdb95bc66",
+        "name": "جیبوتی",
+        "nationality_name": "Djiboutian",
+        "iso_code": "DJ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "9fc39e63-6d8c-41df-8080-237f74593388",
+        "name": "Norfolk Island",
+        "nationality_name": "Norfolk Island",
+        "iso_code": "NF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "a2966694-fea5-45ae-b082-79226d2d4c9b",
+        "name": "یمن",
+        "nationality_name": "Yemeni",
+        "iso_code": "YE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "a466e901-38b9-44a8-9c20-1cbcf40b47db",
+        "name": "مصر",
+        "nationality_name": "Egyptian",
+        "iso_code": "EG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "a5ed9cbf-dedb-4676-a837-db227e38a1ab",
+        "name": "اکوادور",
+        "nationality_name": "Ecuadorian",
+        "iso_code": "EC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "a80a4717-7bf3-42cd-b215-ccdb427d6519",
+        "name": "Pitcairn",
+        "nationality_name": "British (Pitcairn)",
+        "iso_code": "PN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "a9c04fbb-027a-4df7-a051-80918fa5344f",
+        "name": "نیوزیلند",
+        "nationality_name": "نیوزیلند",
+        "iso_code": "NZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "a9c3eecf-17b6-4007-86b9-b6499813419e",
+        "name": "جامائیکا",
+        "nationality_name": "Jamaican",
+        "iso_code": "JM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "aaa926af-479e-4017-9cd1-055a135ca332",
+        "name": "لیختن‌اشتاین",
+        "nationality_name": "Liechtensteiner",
+        "iso_code": "LI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "aabbb18d-0001-4168-af68-429516076b12",
+        "name": "آرژانتین",
+        "nationality_name": "Argentinian",
+        "iso_code": "AR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ac193af4-3e12-4885-9a8c-0ab7c63f7b57",
+        "name": "بریتانیا",
+        "nationality_name": "British",
+        "iso_code": "GB",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ad363c37-b540-4f35-be0f-5e80ae67dcbb",
+        "name": "Anguilla",
+        "nationality_name": "Anguillian",
+        "iso_code": "AI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "af8669d2-1f6a-4f64-ae54-a8744e29e656",
+        "name": "Guernsey",
+        "nationality_name": "British (Guernsey)",
+        "iso_code": "GG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "afcff1a6-a388-4b49-82d9-dbdaf212de27",
+        "name": "بحرین",
+        "nationality_name": "Bahraini",
+        "iso_code": "BH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "b0889fff-45a8-41d5-90a9-dd470df5987c",
+        "name": "لبنان",
+        "nationality_name": "Lebanese",
+        "iso_code": "LB",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "b2055c71-bab0-412c-b9bf-854cd58a9a7c",
+        "name": "مالت",
+        "nationality_name": "Maltese",
+        "iso_code": "MT",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "b3766981-e956-4855-828e-fa3cdac5f4d6",
+        "name": "قبرس",
+        "nationality_name": "قبرس",
+        "iso_code": "CY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "b51f25b9-7c74-43e7-90bf-ccd5af28e2c9",
+        "name": "نپال",
+        "nationality_name": "Nepalese",
+        "iso_code": "NP",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "b523d3dd-3e34-42fb-9751-e34d15c37a79",
+        "name": "Guadeloupe",
+        "nationality_name": "Guadeloupe",
+        "iso_code": "GP",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "b7e66551-eff7-43a4-a192-c3b6900f76ad",
+        "name": "امارات متحده عربی",
+        "nationality_name": "Emirati",
+        "iso_code": "AE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "bb9034a5-c25f-4ed6-abef-db3363711597",
+        "name": "پاراگوئه",
+        "nationality_name": "Paraguayan",
+        "iso_code": "PY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "bd8379a5-3986-4a5f-a4b0-19c4d65ad8d9",
+        "name": "جزایر سلیمان",
+        "nationality_name": "جزایر سلیمان",
+        "iso_code": "SB",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "bde322fa-2003-42b3-9792-03117492094d",
+        "name": "استونی",
+        "nationality_name": "Estonian",
+        "iso_code": "EE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "bdfaae03-42ad-4bc7-8dd0-fbc3672f49b6",
+        "name": "کانادا",
+        "nationality_name": "Canadian",
+        "iso_code": "CA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "bf42b540-2489-47d7-8b41-097b2c2a3e94",
+        "name": "ژاپن",
+        "nationality_name": "Japanese",
+        "iso_code": "JP",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "bf51c1c6-70ea-45d1-b0c5-f9d103a03ddd",
+        "name": "افغانستان",
+        "nationality_name": "افغانستانی",
+        "iso_code": "AF",
+        "phone_code": "981",
+        "currency": "AFN"
+    },
+    {
+        "id": "c029251f-56fb-44b8-ba4a-1516d90d021d",
+        "name": "اروگوئه",
+        "nationality_name": "Uruguayan",
+        "iso_code": "UY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c1811f61-c125-49a2-82dc-0a3636a259f1",
+        "name": "Hong Kong",
+        "nationality_name": "Hong Kong",
+        "iso_code": "HK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c2df19fe-627b-4140-acab-06662ea986fc",
+        "name": "Greenland",
+        "nationality_name": "Greenland",
+        "iso_code": "GL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c3996474-3664-43ba-b769-3a7d7f7574b9",
+        "name": "ازبکستان",
+        "nationality_name": "Uzbekistani",
+        "iso_code": "UZ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c3df0184-9081-4820-87b2-84d34729f166",
+        "name": "کیریباتی",
+        "nationality_name": "I-Kiribati",
+        "iso_code": "KI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c4750306-e0dd-4d03-b219-f671cdd6cf42",
+        "name": "توگو",
+        "nationality_name": "Togolese",
+        "iso_code": "TG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c4ad1e1e-73fb-45e0-af02-16b9d5461dc7",
+        "name": "لسوتو",
+        "nationality_name": "Basotho",
+        "iso_code": "LS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c65e2a32-2330-4078-9182-75cb44b7ca83",
+        "name": "ونزوئلا",
+        "nationality_name": "Venezuelan",
+        "iso_code": "VE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c6aebc80-bb77-49ec-9b3c-1350932978c4",
+        "name": "کلمبیا",
+        "nationality_name": "Colombian",
+        "iso_code": "CO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c9428ff0-06cd-4428-8a81-02d341ecce5d",
+        "name": "Turks and Caicos Islands",
+        "nationality_name": "British (Turks and Caicos Islands)",
+        "iso_code": "TC",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c96ad4ea-515e-4a46-83f0-e705788e542b",
+        "name": "بلاروس",
+        "nationality_name": "بلاروس",
+        "iso_code": "BY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "c9d3e8b7-612a-40eb-b72e-9e2b010cb9e7",
+        "name": "Serbia and Montenegro",
+        "nationality_name": "Montenegrin and Serb",
+        "iso_code": "CS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ca6c5863-9995-43da-9374-18547398f464",
+        "name": "عراق",
+        "nationality_name": "Iraqi",
+        "iso_code": "IQ",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "cc1422c7-dfc3-450a-aea1-516556f08451",
+        "name": "جمهوری دومینیکن",
+        "nationality_name": "Dominican",
+        "iso_code": "DO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "cded3c39-3e63-4cca-bf60-3693787a8b87",
+        "name": "ایالات متحده",
+        "nationality_name": "آمریکایی",
+        "iso_code": "US",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d0086c6b-91cf-4083-8150-70abf6ba0d38",
+        "name": "Western Sahara",
+        "nationality_name": "Sahrawi",
+        "iso_code": "EH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d0d58080-6a73-4c91-87b2-a3975067e5ac",
+        "name": "Reunion",
+        "nationality_name": "Réunionese",
+        "iso_code": "RE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d2f48330-5013-4ad7-bb5b-8114f058f43b",
+        "name": "سنت کیتس و نویس",
+        "nationality_name": "Kittitian and Nevisian",
+        "iso_code": "KN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d3878365-ed5b-4598-898d-012bf916f2c7",
+        "name": "Falkland Islands (Malvinas)",
+        "nationality_name": "British (Falkland Islands)",
+        "iso_code": "FK",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d3c75e24-6967-4a41-be70-f74a36a65656",
+        "name": "Russian Federation",
+        "nationality_name": "Russian Federation",
+        "iso_code": "RU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d4fa27df-1208-450d-a17a-389c5188df34",
+        "name": "تیمور شرقی",
+        "nationality_name": "East Timorese",
+        "iso_code": "TL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d554b0ec-1c1b-4900-8bce-5b9369ab1525",
+        "name": "بوروندی",
+        "nationality_name": "Burundian",
+        "iso_code": "BI",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d5a23d4d-46dc-4e2c-988a-6d1948c8383d",
+        "name": "AndorrA",
+        "nationality_name": "آندورایی",
+        "iso_code": "AD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d7bd9219-d0c8-43c3-bdd0-9df350f5a6cd",
+        "name": "موریتانی",
+        "nationality_name": "Mauritanian",
+        "iso_code": "MR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d7f667e6-8b9f-49e3-8362-24dcd8d608df",
+        "name": "French Guiana",
+        "nationality_name": "French Guiana",
+        "iso_code": "GF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d82aa8d0-9ee7-46cb-96ed-09202370d44a",
+        "name": "نیجریه",
+        "nationality_name": "Nigerian",
+        "iso_code": "NG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "d94c8936-b7f0-4d54-a59d-fe3a5f758125",
+        "name": "مکزیک",
+        "nationality_name": "Mexican",
+        "iso_code": "MX",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "dc41a31e-807f-40ba-aedb-de15b3d791dc",
+        "name": "چاد",
+        "nationality_name": "Chadian",
+        "iso_code": "TD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "dcd104a4-d809-40a8-90fe-e1047f588b2a",
+        "name": "Faroe Islands",
+        "nationality_name": "Faroe Islands",
+        "iso_code": "FO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "deab8a3a-0b7b-4790-8189-1af3c7f351f3",
+        "name": "British Indian Ocean Territory",
+        "nationality_name": "British Indian Ocean Territory",
+        "iso_code": "IO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "dfb21ccd-cfdc-48bf-ad80-5eea2cd1ba21",
+        "name": "قرقیزستان",
+        "nationality_name": "Kyrgyzstani",
+        "iso_code": "KG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "dfe44e78-1db6-4ef4-9c1d-1e5e03245c1d",
+        "name": "Netherlands Antilles",
+        "nationality_name": "Dutch Antillean",
+        "iso_code": "AN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e08d0cdf-01b1-4b00-bd92-1e3715f05891",
+        "name": "گرنادا",
+        "nationality_name": "Grenadian",
+        "iso_code": "GD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e23c10fb-01a5-4a75-b8fa-c99bb32690fc",
+        "name": "نروژ",
+        "nationality_name": "Norwegian",
+        "iso_code": "NO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e3af22ab-eee6-4161-b70e-3d5bc6ce3ca4",
+        "name": "گویان",
+        "nationality_name": "Guyanese",
+        "iso_code": "GY",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e4c62e8c-4969-4c48-8772-1e4d2eca9df5",
+        "name": "Holy See (Vatican City State)",
+        "nationality_name": "Holy See (Vatican City State)",
+        "iso_code": "VA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e5346ae2-3cf9-4dbe-b562-610f6ac1999a",
+        "name": "بولیوی",
+        "nationality_name": "Bolivian",
+        "iso_code": "BO",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e5806b19-deac-4fa4-8254-cb6e810fa852",
+        "name": "اندونزی",
+        "nationality_name": "Indonesian",
+        "iso_code": "ID",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e6897cf0-4d55-4ddd-b533-7677cf712bd2",
+        "name": "وانواتو",
+        "nationality_name": "Vanuatu ",
+        "iso_code": "VU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "e763de7e-e041-4646-954f-580f3ad3698f",
+        "name": "پاناما",
+        "nationality_name": "Panamanian",
+        "iso_code": "PA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "eae0aa89-a0d7-4e3d-904a-5db99f234264",
+        "name": "هلند",
+        "nationality_name": "Dutch",
+        "iso_code": "NL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "eaf30f73-6fd1-4424-952f-d60bf00c0bf0",
+        "name": "کامرون",
+        "nationality_name": "Cameroonian",
+        "iso_code": "CM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ebc3a7a5-2710-4b4e-9758-01b0d3497a1e",
+        "name": "تونس",
+        "nationality_name": "Tunisian",
+        "iso_code": "TN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ebffaee6-e8f2-431c-9016-8fc1af802fcc",
+        "name": "اوگاندا",
+        "nationality_name": "Ugandan",
+        "iso_code": "UG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ed2405c0-dfc7-4581-ad08-f899c173f284",
+        "name": "سنگال",
+        "nationality_name": "Senegalese",
+        "iso_code": "SN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ed9d9a62-adcd-47ef-8c93-3af6a8881185",
+        "name": "Niue",
+        "nationality_name": "Niue",
+        "iso_code": "NU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ef744787-060b-4af8-a7ea-c9d78e68b524",
+        "name": "سوئیس",
+        "nationality_name": "Swiss",
+        "iso_code": "CH",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ef7973c9-0179-41bb-aa32-2b8849bb3a0f",
+        "name": "گینه",
+        "nationality_name": "Guinean",
+        "iso_code": "GN",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f219c83f-9f0d-4b77-9db4-7f2f197010c0",
+        "name": "پاپوآ گینه نو",
+        "nationality_name": "Papua New Guinean",
+        "iso_code": "PG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f250ed50-832a-405b-a4d6-2d7f5850ed86",
+        "name": "Saint Pierre and Miquelon",
+        "nationality_name": "Saint Pierre and Miquelon",
+        "iso_code": "PM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f436d9e3-1b15-42b9-8566-6b71eaa97624",
+        "name": "Lao People\"S Democratic Republic",
+        "nationality_name": "Lao",
+        "iso_code": "LA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f537a4af-2fc7-426e-8168-5306d0852408",
+        "name": "باهاما",
+        "nationality_name": "Bahamian",
+        "iso_code": "BS",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f56a07a3-8512-48cc-8460-0dfd46dca6c9",
+        "name": "Åland Islands",
+        "nationality_name": "Swedish (Åland Islands)",
+        "iso_code": "AX",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f5efa342-0a5c-4353-b1a5-c9d01dfd50e7",
+        "name": "لهستان",
+        "nationality_name": "Polish",
+        "iso_code": "PL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f7a514a8-997d-4718-90b6-6b1357df2206",
+        "name": "Wallis and Futuna",
+        "nationality_name": "French (Wallis and Futuna)",
+        "iso_code": "WF",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f7e6ca21-d6b6-4db4-9d93-c03b06062a4c",
+        "name": "مجارستان",
+        "nationality_name": "Hungarian",
+        "iso_code": "HU",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f98b8851-b634-40dc-a795-13132b8f7fa1",
+        "name": "بنگلادش",
+        "nationality_name": "Bangladeshi",
+        "iso_code": "BD",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "f9fb3acc-a664-434e-b255-36754e82e4d4",
+        "name": "کاستاریکا",
+        "nationality_name": "Costa Rican",
+        "iso_code": "CR",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "fa348cb7-82af-4a44-b9e9-981075c1043c",
+        "name": "آنتیگوا و باربودا",
+        "nationality_name": "Antiguan and Barbudan",
+        "iso_code": "AG",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "fa62be49-34a9-4c13-8a51-8b9b871c1605",
+        "name": "مراکش",
+        "nationality_name": "Moroccan",
+        "iso_code": "MA",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "fd5db7d4-a580-422f-9c7c-b1221493b5c0",
+        "name": "پرو",
+        "nationality_name": "Peruvian",
+        "iso_code": "PE",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "fe89d46a-8cf8-4e94-918c-ec1ebcbead73",
+        "name": "ارمنستان",
+        "nationality_name": "Armenian",
+        "iso_code": "AM",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "feb89a84-6970-461d-8ffa-e9dd11227e68",
+        "name": "آلبانی",
+        "nationality_name": "آلبانیایی",
+        "iso_code": "AL",
+        "phone_code": null,
+        "currency": null
+    },
+    {
+        "id": "ff185fbb-fba5-48a2-a431-4e4fa3ca4ce9",
+        "name": "سنگاپور",
+        "nationality_name": "Singaporean",
+        "iso_code": "SG",
+        "phone_code": null,
+        "currency": null
+    }
+]

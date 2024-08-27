@@ -47,7 +47,7 @@ class AuthController extends Controller
     {
         $type = $this->getUserNameType($user_name);
         if (!$type) {
-            api_response(false, null, Response::HTTP_UNPROCESSABLE_ENTITY, null, 'Please enter the correct username')->throwResponse();
+            api_response(false, null, Response::HTTP_UNPROCESSABLE_ENTITY, null, 'لطفا نام کاربری را صحیح وارد کنید!')->throwResponse();
 
         }
         return User::where($type, $user_name)->first();
@@ -84,13 +84,13 @@ class AuthController extends Controller
         $user = $this->getUser($request->user_name);
 
         if (!$user || !Hash::check($request->password, $user->password))
-            return api_response( false, null, Response::HTTP_UNPROCESSABLE_ENTITY, null, 'username or password is invalid');
+            return api_response( false, null, Response::HTTP_UNPROCESSABLE_ENTITY, null, 'نام کاربری یا رمز عبور صحیح نمی باشد!');
 
         $roles = $user->roles()->pluck('name')->toArray();
 
         if (!in_array($request->role, $roles))
             return api_response(false, null,
-                Response::HTTP_FORBIDDEN, 'You do not have permission to access this panel!');
+                Response::HTTP_FORBIDDEN, 'شما اجازه ی دسترسی به این پنل را ندارید!');
 
 
         // Revoke all tokens...
@@ -121,7 +121,7 @@ class AuthController extends Controller
         $username = $request->user_name;
         $type = $this->getUserNameType($username);
         $is_already_sent = UserVerify::where("user_name", $username)
-            ->where("created_at", ">", Carbon::now()->subMinutes(5))->count();
+            ->where("created_at", ">", Carbon::now()->subMinutes(1))->count();
         if ($is_already_sent) {
             return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'token is already sent');
 
@@ -178,13 +178,13 @@ class AuthController extends Controller
 
         if ($is_correct == 0) {
 
-            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'username or code is invalid');
+            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'نام کاربری یا کد صحیح نمی باشد!');
 
         }
 
         $user = $this->getUser($request->user_name);
         if (!$user) {
-            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'username is invalid');
+            return api_response(false, null, Response::HTTP_FORBIDDEN, null, 'نام کاربری معتبر نیست!');
         }
 
 
@@ -194,7 +194,7 @@ class AuthController extends Controller
 
 
             return api_response(false, null,
-                Response::HTTP_FORBIDDEN, 'You do not have permission to access this panel!');
+                Response::HTTP_FORBIDDEN, 'شما اجازه دسترسی به این پنل را ندارید!');
 
 
         }

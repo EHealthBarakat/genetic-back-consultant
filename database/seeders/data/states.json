@@ -1,0 +1,219 @@
+[
+    {
+        "id": "ed79a821-d79c-43a5-99c4-02a6c6f92ef9",
+        "name": "آذربايجان شرقي",
+        "slug": "آذربايجان شرقي",
+        "latitude": 38.07,
+        "longitude": 46.29
+    },
+    {
+        "id": "92d59917-9dcf-4242-84c4-3092d7b4e943",
+        "name": "آذربايجان غربي",
+        "slug": "آذربايجان غربي",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "f2b22b2e-eb33-4409-96b0-d036544c0b24",
+        "name": "اردبيل",
+        "slug": "اردبيل",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "9cde0263-aefd-4657-b7af-9a35f638a7a7",
+        "name": "اصفهان",
+        "slug": "اصفهان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "d8df5a4f-f0c9-45a1-a6a9-f52042b36a47",
+        "name": "البرز",
+        "slug": "البرز",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "9c8e3705-dc0a-45b0-8e1b-88cea7bfa183",
+        "name": "ايلام",
+        "slug": "ايلام",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "e25b7b03-df47-4045-a28f-0eeeb22360b9",
+        "name": "بوشهر",
+        "slug": "بوشهر",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "27ba29e4-8bbb-4ca3-a44c-cf02f000973e",
+        "name": "تهران",
+        "slug": "تهران",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "62cf9d6e-25a6-4ae7-a140-862c88f4a7b3",
+        "name": "چهارمحال بختياري",
+        "slug": "چهارمحال بختياري",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "64ccf503-677f-47ef-b302-cde3e9f17cb6",
+        "name": "خراسان جنوبي",
+        "slug": "خراسان جنوبي",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "e82cc9a6-a233-431c-9fea-2c2f7fb341a4",
+        "name": "خراسان رضوي",
+        "slug": "خراسان رضوي",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "6cf74b35-03d8-4b88-8343-e01f32020a6d",
+        "name": "خراسان شمالي",
+        "slug": "خراسان شمالي",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "d51b1fbd-cae0-45c6-8344-d3703874e7bf",
+        "name": "خوزستان",
+        "slug": "خوزستان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "85def549-af7c-4eb5-819b-aa14326c2b37",
+        "name": "زنجان",
+        "slug": "زنجان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "65d7aa4e-b141-4b5f-88f6-6d7bb68d1484",
+        "name": "سمنان",
+        "slug": "سمنان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "752726ce-cf8d-4e84-b77c-6a28d68b3024",
+        "name": "سيستان و بلوچستان",
+        "slug": "سيستان و بلوچستان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "c6c4f841-4397-4189-9962-b0787c106d02",
+        "name": "فارس",
+        "slug": "فارس",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "8d926879-adad-47c2-8ead-b138ab7e1555",
+        "name": "قزوين",
+        "slug": "قزوين",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "2df85ab9-7e0b-44fa-8eec-7b7217f91d8c",
+        "name": "قم",
+        "slug": "قم",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "4a1bccc0-b920-41dc-8aca-a6829d2f2885",
+        "name": "كردستان",
+        "slug": "كردستان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "8e1af055-7302-4430-b575-0e6d3868f90a",
+        "name": "كرمان",
+        "slug": "كرمان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "5c9d6dee-b0cd-483d-b3c6-60a835375fc2",
+        "name": "كرمانشاه",
+        "slug": "كرمانشاه",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "3296c5a6-ce62-4533-ac59-98d5fe48ecdd",
+        "name": "كهكيلويه و بويراحمد",
+        "slug": "كهكيلويه و بويراحمد",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "d11e7156-9452-4800-9181-e53c48b50c24",
+        "name": "گلستان",
+        "slug": "گلستان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "ba0b0cac-85d5-4078-89d1-4d03cfd6eb6c",
+        "name": "گيلان",
+        "slug": "گيلان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "a88d3f0a-c297-4f49-a2fe-b3e1943f52f2",
+        "name": "لرستان",
+        "slug": "لرستان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "f4d3b92a-c334-4a93-96d2-d09deb58b21c",
+        "name": "مازندران",
+        "slug": "مازندران",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "6803c1cf-e67c-4dad-8c57-5746282f5bd7",
+        "name": "مركزي",
+        "slug": "مركزي",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "fcb9aa9a-3662-4efd-a55d-5aeee619672e",
+        "name": "هرمزگان",
+        "slug": "هرمزگان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "7c5a8f98-8caa-4d5e-8b97-8f9c17522022",
+        "name": "همدان",
+        "slug": "همدان",
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "id": "73a8d0aa-bac4-40a1-9062-286a4064134b",
+        "name": "يزد",
+        "slug": "يزد",
+        "latitude": null,
+        "longitude": null
+    }
+]

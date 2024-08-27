@@ -2,17 +2,18 @@
 
 namespace App\Http\Requests\Auth;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\BaseRequest;
 
-class AuthSignRequest extends FormRequest
+
+class AuthSignRequest extends BaseRequest
 {
-    public function authorize()
+    public function authorize():bool
     {
         return true;
     }
 
 
-    public function rules()
+    public function rules(): array
     {
         return [
 
@@ -20,4 +21,5 @@ class AuthSignRequest extends FormRequest
 
         ];
     }
+
 }

@@ -1,7 +1,9 @@
 <?php
 
 
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PatientController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,3 +18,9 @@ Route::prefix('auth')->group(function () {
     Route::middleware('auth:sanctum')->get('/logout/{role}',[AuthController::class,'logout']);
 
 });
+
+Route::middleware('auth:sanctum')->Resource('patients', PatientController::class);
+Route::post('/patients/exist',[PatientController::class,'patient_exist'])->name('patients.exist');
+Route::middleware('auth:sanctum')->Resource('appointments', AppointmentController::class);
+
+
