@@ -23,8 +23,8 @@ class AppointmentController extends Controller
     {
         $perPage = request()->input('perPage', 12); // Default to 10 items per page if not specified
         $page = request()->input('page', 1); // Default to the first page if not specified
-        $patients = Appointment::query()->paginate($perPage, ['*'], 'page', $page);
-        return api_response(true, $patients, Response::HTTP_OK);
+        $appointments = Appointment::query()->paginate($perPage, ['*'], 'page', $page);
+        return api_response(true, $appointments->load(['patient.user']), Response::HTTP_OK);
     }
 
 
