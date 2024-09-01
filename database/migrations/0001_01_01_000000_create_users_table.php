@@ -16,9 +16,11 @@ return new class extends Migration
             $table->uuid('id')->primary()->unique();
             $table->longText('first_name')->fulltext('first_name')->nullable(true);
             $table->longText('last_name')->fulltext('last_name')->nullable(true);
-            $table->string('email')->unique()->nullable();
+            $table->string('email')->fulltext('email')->nullable();
+            $table->unique(['email', 'deleted_at'], 'users_email_unique');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('mobile')->unique()->nullable();
+            $table->string('mobile')->fulltext('mobile')->nullable();
+            $table->unique(['mobile', 'deleted_at'], 'users_mobile_unique');
             $table->timestamp('mobile_verified_at')->nullable();
             $table->enum('gender_enum', array_column(UserGenderEnum::cases(),'value'))->nullable(true);
             $table->date('birthday')->nullable();

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Patient\PatientIndexRequest;
 use App\Http\Requests\Patient\PatientStoreRequest;
 use App\Http\Requests\Patient\PatientUpdateRequest;
 use App\Models\City;
@@ -32,14 +33,31 @@ class PatientController extends Controller
         return api_response(true, ['exist' => false], Response::HTTP_OK);
     }
 
+
     /**
+     * @param PatientIndexRequest $request
      * @return JsonResponse
      */
-    public function index(): JsonResponse
+    public function index(PatientIndexRequest $request): JsonResponse
     {
-        $perPage = request()->input('perPage', 12); // Default to 10 items per page if not specified
+        $perPage = request()->input('perPage', 12); // Default to 12 items per page if not specified
         $page = request()->input('page', 1); // Default to the first page if not specified
-        $patients = Patient::query()->with(['user', 'city'])->paginate($perPage, ['*'], 'page', $page);
+        $query = Patient::query()->with(['user', 'city']);
+
+        if ($request->name) {
+            $query->whereHas('user', function($query) use ($request) {
+                $query->whereRaw(
+                    "MATCH(users.first_name) AGAINST(?)",
+                    array($request->get('name'))
+                )->orWhereRaw(
+                    "MATCH(users.last_name) AGAINST(?)",
+                    array($request->get('name'))
+                );
+            });
+        }
+
+        $patients = $query->paginate($perPage, ['*'], 'page', $page);
+
         return api_response(true, $patients, Response::HTTP_OK);
     }
 
@@ -227,7 +245,7 @@ class PatientController extends Controller
         } catch (\Exception $e) {
 
             DB::rollBack();
-            return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, 'خطایی رخ داده است!');
+            return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, $e->getMessage());
         }
         return
             api_response(true, $patient->load(['user', 'city']), Response::HTTP_CREATED, 'اطلاعات بیمار ثبت شد!');
@@ -240,9 +258,162 @@ class PatientController extends Controller
     }
 
 
-    public function edit(string $id)
+    public function edit(Patient $patient)
     {
-        //
+        $cities = City::query()->orderBy('show_order', 'asc')
+            ->orderBy('name','asc')->get();
+        $formFields = [
+            [
+                'label' => 'نام',
+                'name' => 'first_name',
+                'value' => $patient->user->first_name,
+                'type' => 'text',
+                'required' => true,
+                'placeholder' => 'نام را وارد کنید',
+            ],
+            [
+                'label' => 'نام خانوادگی',
+                'name' => 'last_name',
+                'value' => $patient->user->last_name,
+                'type' => 'text',
+                'required' => true,
+                'placeholder' => 'نام خانوادگی را وارد کنید',
+            ],
+            [
+                'label' => 'جنسیت',
+                'name' => 'gender_enum',
+                'value' => $patient->user->gender_enum,
+                'type' => 'radio',
+                'required' => true,
+                'radios' => [
+                    [
+                        'label' => 'خانم',
+                        'value' => 'خانم',
+                        'name' => 'gender_enum',
+                        'id' => 'male',
+                    ],
+                    [
+                        'label' => 'آقا',
+                        'value' => 'آقا',
+                        'name' => 'gender_enum',
+                        'id' => 'female',
+                    ],
+                ],
+            ],
+            [
+                'label' => 'نام پدر',
+                'name' => 'father_name',
+                'value' => $patient->father_name,
+
+                'type' => 'text',
+                'placeholder' => 'نام پدر را وارد کنید',
+                'required' => true,
+            ],
+            [
+                'label' => 'کد ملی',
+                'name' => 'national_code',
+                'value' => $patient->national_code,
+                'type' => 'text',
+                'placeholder' => 'کد ملی را وارد کنید',
+                'dir' => 'ltr',
+                'required' => true,
+                'inputClassName' => 'placeholder-end',
+            ],
+            [
+                'label' => 'وضعیت تاهل',
+                'name' => 'marital_enum',
+                'value' => $patient->marital_enum,
+                'type' => 'radio',
+                'required' => true,
+                'radios' => [
+                    [
+                        'label' => 'مجرد',
+                        'value' => 'مجرد',
+                        'name' => 'marital_enum',
+                        'id' => 'single',
+                    ],
+                    [
+                        'label' => 'متاهل',
+                        'value' => 'متاهل',
+                        'name' => 'marital_enum',
+                        'id' => 'married',
+                    ],
+                ],
+            ],
+            [
+                'label' => 'کد ملی همسر',
+                'name' => 'spouse_national_code',
+                'value' => $patient->spouse_national_code,
+                'type' => 'text',
+                'placeholder' => 'کد ملی همسر را وارد کنید',
+                'dir' => 'ltr',
+                'inputClassName' => 'placeholder-end',
+            ],
+            [
+                'label' => 'تاریخ تولد',
+                'name' =>'birthday',
+                'value' =>$patient->user->birthday,
+                'type' => 'date',
+                'placeholder' => 'تاریخ تولد را وارد کنید',
+                'dir' => 'ltr',
+                'required' => true,
+                'inputClassName' => 'placeholder-end',
+            ],
+            [
+                'label' => 'شماره همراه',
+                'name' => 'mobile',
+                'value' => $patient->user->mobile,
+                'type' => 'text',
+                'placeholder' => 'شماره همراه را وارد کنید',
+                'dir' => 'ltr',
+                'required' => true,
+                'inputClassName' => 'placeholder-end',
+            ],
+            [
+                'label' => 'مدرک تحصیلی',
+                'name' => 'degree_enum',
+                'value' => $patient->degree_enum,
+                'type' => 'select',
+                'defaultValue' => ['value' => 'کارشناسی', 'label' => 'کارشناسی'],
+                'required' => true,
+                'options' => [
+                    ['value' => 'بدون مدرک', 'label' => 'بدون مدرک'],
+                    ['value' => 'دیپلم', 'label' => 'دیپلم'],
+                    ['value' => 'فوق دیپلم', 'label' => 'فوق دیپلم'],
+                    ['value' => 'کارشناسی', 'label' => 'کارشناسی'],
+                    ['value' => 'کارشناسی ارشد', 'label' => 'کارشناسی ارشد'],
+                    ['value' => 'دکترا', 'label' => 'دکترا'],
+                    ['value' => 'غیره', 'label' => 'غیره'],
+                ],
+            ],
+            [
+                'label' => 'ایمیل',
+                'name' => 'email',
+                'value' => $patient->user->email,
+                'type' => 'email',
+                'placeholder' => 'ایمیل را وارد کنید',
+                'dir' => 'ltr',
+                'inputClassName' => 'placeholder-end',
+            ],
+            [
+                'label' => 'شهر',
+                'name' => 'city_id',
+                'value' => $patient->city_id,
+                'type' => 'select',
+                'defaultValue' => ['value' => 'مازندران', 'label' => 'مازندران'],
+                'required' => true,
+                'options' => $cities,
+            ],
+            [
+                'label' => 'آدرس',
+                'name' => 'address',
+                'value' => $patient->address,
+                'type' => 'text',
+                'placeholder' => 'آدرس را وارد کنید',
+                'required' => true,
+            ],
+        ];
+        return api_response(true, $formFields, Response::HTTP_OK, '');
     }
 
 
@@ -280,7 +451,7 @@ class PatientController extends Controller
         } catch (\Exception $e) {
 
             DB::rollBack();
-            return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, 'خطایی رخ داده است!');
+            return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, $e->getMessage());
         }
         return
             api_response(true, $patient->load(['user', 'city']), Response::HTTP_OK, 'اطلاعات بیمار ویرایش شد!');

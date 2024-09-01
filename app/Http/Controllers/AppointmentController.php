@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Appointment\AppointmentStoreRequest;
 use App\Http\Requests\Appointment\AppointmentUpdateRequest;
 use App\Models\Appointment;
+use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -83,9 +84,25 @@ class AppointmentController extends Controller
     }
 
 
-    public function edit(string $id)
+    public function edit(Appointment $appointment)
     {
-        //
+        $formFields = [
+            [
+                'label' => 'روز مراجعه',
+                'type' => 'date',
+                'name' => 'date',
+                'value' => Carbon::parse($appointment->referred_at)->format('Y-m-d'),
+                'required' => true,
+            ],
+            [
+                'label' => 'ساعت مراجعه',
+                'type' => 'time',
+                'name' => 'time',
+                'value' => Carbon::parse($appointment->referred_at)->format('H:i:s'),
+                'required' => true,
+            ],
+        ];
+        return api_response(true, $formFields, Response::HTTP_OK, '');
     }
 
 

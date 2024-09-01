@@ -29,12 +29,15 @@ return new class extends Migration
                 ->cascadeOnUpdate();
             $table->enum('marital_enum', array_column(MaritalEnum::cases(), 'value'));
             $table->enum('degree_enum', array_column(DegreeEnum::cases(), 'value'));
-            $table->char('national_code','10');
+            $table->char('national_code','10')->fulltext('national_code');
+            $table->unique(['national_code', 'deleted_at'], 'patients_national_code_unique');
             $table->char('spouse_national_code','10')->nullable();
+            $table->unique(['spouse_national_code', 'deleted_at'], 'patients_spouse_national_code_unique');
             $table->text('address');
             $table->string('father_name');
             $table->timestamps();
             $table->softDeletes();
+            $table->unique(['national_code', 'spouse_national_code'], 'unique_national_spouse_code');
         });
     }
 
