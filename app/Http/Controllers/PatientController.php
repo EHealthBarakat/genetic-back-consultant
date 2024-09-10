@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Patient\PatientExistRequest;
 use App\Http\Requests\Patient\PatientIndexRequest;
 use App\Http\Requests\Patient\PatientStoreRequest;
 use App\Http\Requests\Patient\PatientUpdateRequest;
@@ -9,7 +10,6 @@ use App\Models\City;
 use App\Models\Patient;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 
@@ -18,13 +18,15 @@ use Illuminate\Support\Facades\DB;
  */
 class PatientController extends Controller
 {
+
+
     /**
-     * @param Request $request
+     * @param PatientExistRequest $request
      * @return JsonResponse
      */
-    public function exist_patient(Request $request): JsonResponse
+    public function exist_patient(PatientExistRequest $request): JsonResponse
     {
-        $patient=Patient::find($request->patient_id);
+        $patient=Patient::query()->where('national_code',$request->national_code)->first();
         if ($patient) {
 
             return api_response(true, ['exist' => true], Response::HTTP_OK);
@@ -55,6 +57,30 @@ class PatientController extends Controller
                 );
             });
         }
+        if ($request->mobile) {
+            $query->whereHas('user', function($query) use ($request) {
+                $query->whereRaw(
+                    "MATCH(users.mobile) AGAINST(?)",
+                    array($request->get('mobile'))
+                );
+            });
+        }
+        if ($request->email) {
+            $query->whereHas('user', function($query) use ($request) {
+                $query->whereRaw(
+                    "MATCH(users.email) AGAINST(?)",
+                    array($request->get('email'))
+                );
+            });
+        }
+        if ($request->has('national_code')) {
+            $query->whereRaw("MATCH(national_code) AGAINST(?)", [$request->national_code]);
+        }
+
+        if ($request->has('city_id')) {
+            $query->where('city_id', $request->city_id);
+        }
+
 
         $patients = $query->paginate($perPage, ['*'], 'page', $page);
 
@@ -252,13 +278,17 @@ class PatientController extends Controller
     }
 
 
-    public function show(string $id)
+    /**
+     * @param Patient $patient
+     * @return JsonResponse
+     */
+    public function show(Patient $patient): JsonResponse
     {
-        //
+        return api_response(true, $patient->load(['user','city']), Response::HTTP_OK, '');
     }
 
 
-    public function edit(Patient $patient)
+    public function edit(Patient $patient): JsonResponse
     {
         $cities = City::query()->orderBy('show_order', 'asc')
             ->orderBy('name','asc')->get();
@@ -476,5 +506,15 @@ class PatientController extends Controller
             return api_response(false, null, Response::HTTP_INTERNAL_SERVER_ERROR, 'خطایی رخ داده است!');
         }
         return api_response(true, null, Response::HTTP_OK, 'بیمار حذف شد!');
+    }
+
+
+    /**
+     * @return JsonResponse
+     */
+    public function filters(): JsonResponse
+    {
+        $filters=resolve(PatientIndexRequest::class)->queryParameters();
+        return api_response(true, $filters, Response::HTTP_OK, '');
     }
 }

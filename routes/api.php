@@ -18,9 +18,10 @@ Route::prefix('auth')->group(function () {
     Route::middleware('auth:sanctum')->get('/logout/{role}',[AuthController::class,'logout']);
 
 });
-
+Route::middleware('auth:sanctum')->get('/patients/filters',[PatientController::class,'filters']);
 Route::middleware('auth:sanctum')->Resource('patients', PatientController::class);
-Route::post('/patients/exist',[PatientController::class,'patient_exist'])->name('patients.exist');
+
+Route::middleware('auth:sanctum')->post('/patients/exist',[PatientController::class,'exist_patient'])->name('patients.exist');
 Route::middleware('auth:sanctum')->Resource('appointments', AppointmentController::class);
 
 

@@ -121,7 +121,10 @@
                     <a href="#patient">Patient</a>
                 </li>
                                     <ul id="tocify-subheader-patient" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="patient-GETapi-patients">
+                                                    <li class="tocify-item level-2" data-unique="patient-GETapi-patients-filters">
+                                <a href="#patient-GETapi-patients-filters">GET api/patients/filters</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="patient-GETapi-patients">
                                 <a href="#patient-GETapi-patients">GET api/patients</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="patient-GETapi-patients-create">
@@ -142,6 +145,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="patient-DELETEapi-patients--id-">
                                 <a href="#patient-DELETEapi-patients--id-">DELETE api/patients/{id}</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="patient-POSTapi-patients-exist">
+                                <a href="#patient-POSTapi-patients-exist">POST api/patients/exist</a>
+                            </li>
                                                                         </ul>
                             </ul>
             </div>
@@ -153,7 +159,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 1, 2024</li>
+        <li>Last updated: September 9, 2024</li>
     </ul>
 </div>
 
@@ -192,7 +198,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/appointments" \
-    --header "Authorization: Bearer geD3a6c1f86P5k4VhaZvbdE" \
+    --header "Authorization: Bearer eDgfEv31kZ84dcahV6Pa5b6" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -203,7 +209,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 );
 
 const headers = {
-    "Authorization": "Bearer geD3a6c1f86P5k4VhaZvbdE",
+    "Authorization": "Bearer eDgfEv31kZ84dcahV6Pa5b6",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -286,10 +292,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-appointments"
-               value="Bearer geD3a6c1f86P5k4VhaZvbdE"
+               value="Bearer eDgfEv31kZ84dcahV6Pa5b6"
                data-component="header">
     <br>
-<p>Example: <code>Bearer geD3a6c1f86P5k4VhaZvbdE</code></p>
+<p>Example: <code>Bearer eDgfEv31kZ84dcahV6Pa5b6</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -330,7 +336,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/appointments/create" \
-    --header "Authorization: Bearer fav6Eb6ak1P4ceVD3Z8dhg5" \
+    --header "Authorization: Bearer dPb58613kahcfDeVEgZv64a" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -341,7 +347,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer fav6Eb6ak1P4ceVD3Z8dhg5",
+    "Authorization": "Bearer dPb58613kahcfDeVEgZv64a",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -424,10 +430,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-appointments-create"
-               value="Bearer fav6Eb6ak1P4ceVD3Z8dhg5"
+               value="Bearer dPb58613kahcfDeVEgZv64a"
                data-component="header">
     <br>
-<p>Example: <code>Bearer fav6Eb6ak1P4ceVD3Z8dhg5</code></p>
+<p>Example: <code>Bearer dPb58613kahcfDeVEgZv64a</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -468,12 +474,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/appointments" \
-    --header "Authorization: Bearer 6cDEehbgdk431v5Va8ZPaf6" \
+    --header "Authorization: Bearer fP31d6ehZ5Vc8bDa46agvEk" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"patient_id\": \"minima\",
-    \"referred_at\": \"2024-09-01 11:34:42\"
+    \"patient_id\": \"iure\",
+    \"referred_at\": \"2024-09-09 10:01:57\"
 }"
 </code></pre></div>
 
@@ -484,14 +490,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer 6cDEehbgdk431v5Va8ZPaf6",
+    "Authorization": "Bearer fP31d6ehZ5Vc8bDa46agvEk",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "patient_id": "minima",
-    "referred_at": "2024-09-01 11:34:42"
+    "patient_id": "iure",
+    "referred_at": "2024-09-09 10:01:57"
 };
 
 fetch(url, {
@@ -573,10 +579,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-appointments"
-               value="Bearer 6cDEehbgdk431v5Va8ZPaf6"
+               value="Bearer fP31d6ehZ5Vc8bDa46agvEk"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 6cDEehbgdk431v5Va8ZPaf6</code></p>
+<p>Example: <code>Bearer fP31d6ehZ5Vc8bDa46agvEk</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -607,10 +613,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="patient_id"                data-endpoint="POSTapi-appointments"
-               value="minima"
+               value="iure"
                data-component="body">
     <br>
-<p>Example: <code>minima</code></p>
+<p>Example: <code>iure</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>referred_at</code></b>&nbsp;&nbsp;
@@ -618,10 +624,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="referred_at"                data-endpoint="POSTapi-appointments"
-               value="2024-09-01 11:34:42"
+               value="2024-09-09 10:01:57"
                data-component="body">
     <br>
-<p>Must be a valid date in the format <code>Y-m-d H:i:s</code>. Example: <code>2024-09-01 11:34:42</code></p>
+<p>Must be a valid date in the format <code>Y-m-d H:i:s</code>. Example: <code>2024-09-09 10:01:57</code></p>
         </div>
         </form>
 
@@ -639,19 +645,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/appointments/quia" \
-    --header "Authorization: Bearer fceP3aDa4EbZVg856d61hvk" \
+    --get "http://localhost:8000/api/appointments/non" \
+    --header "Authorization: Bearer k1d6g6acPbhE4va3D8V5feZ" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/appointments/quia"
+    "http://localhost:8000/api/appointments/non"
 );
 
 const headers = {
-    "Authorization": "Bearer fceP3aDa4EbZVg856d61hvk",
+    "Authorization": "Bearer k1d6g6acPbhE4va3D8V5feZ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -734,10 +740,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-appointments--id-"
-               value="Bearer fceP3aDa4EbZVg856d61hvk"
+               value="Bearer k1d6g6acPbhE4va3D8V5feZ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer fceP3aDa4EbZVg856d61hvk</code></p>
+<p>Example: <code>Bearer k1d6g6acPbhE4va3D8V5feZ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -768,10 +774,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-appointments--id-"
-               value="quia"
+               value="non"
                data-component="url">
     <br>
-<p>The ID of the appointment. Example: <code>quia</code></p>
+<p>The ID of the appointment. Example: <code>non</code></p>
             </div>
                     </form>
 
@@ -789,19 +795,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/appointments/omnis/edit" \
-    --header "Authorization: Bearer dEcZkg4VebaD316Ph86afv5" \
+    --get "http://localhost:8000/api/appointments/295bade4-b1d5-4ef6-8681-bd3db0dcf23c/edit" \
+    --header "Authorization: Bearer h4Z6kdDcPave8fg563VEa1b" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/appointments/omnis/edit"
+    "http://localhost:8000/api/appointments/295bade4-b1d5-4ef6-8681-bd3db0dcf23c/edit"
 );
 
 const headers = {
-    "Authorization": "Bearer dEcZkg4VebaD316Ph86afv5",
+    "Authorization": "Bearer h4Z6kdDcPave8fg563VEa1b",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -884,10 +890,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-appointments--appointment_id--edit"
-               value="Bearer dEcZkg4VebaD316Ph86afv5"
+               value="Bearer h4Z6kdDcPave8fg563VEa1b"
                data-component="header">
     <br>
-<p>Example: <code>Bearer dEcZkg4VebaD316Ph86afv5</code></p>
+<p>Example: <code>Bearer h4Z6kdDcPave8fg563VEa1b</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -918,10 +924,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="appointment_id"                data-endpoint="GETapi-appointments--appointment_id--edit"
-               value="omnis"
+               value="295bade4-b1d5-4ef6-8681-bd3db0dcf23c"
                data-component="url">
     <br>
-<p>The ID of the appointment. Example: <code>omnis</code></p>
+<p>The ID of the appointment. Example: <code>295bade4-b1d5-4ef6-8681-bd3db0dcf23c</code></p>
             </div>
                     </form>
 
@@ -939,31 +945,31 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/appointments/quia" \
-    --header "Authorization: Bearer VeZaEgbDP3v681fch6a4kd5" \
+    "http://localhost:8000/api/appointments/295bade4-b1d5-4ef6-8681-bd3db0dcf23c" \
+    --header "Authorization: Bearer fkDd1VZ63Eegbah8c6vPa54" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"patient_id\": \"corrupti\",
-    \"referred_at\": \"2024-09-01 11:34:42\"
+    \"patient_id\": \"aut\",
+    \"referred_at\": \"2024-09-09 10:01:57\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/appointments/quia"
+    "http://localhost:8000/api/appointments/295bade4-b1d5-4ef6-8681-bd3db0dcf23c"
 );
 
 const headers = {
-    "Authorization": "Bearer VeZaEgbDP3v681fch6a4kd5",
+    "Authorization": "Bearer fkDd1VZ63Eegbah8c6vPa54",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "patient_id": "corrupti",
-    "referred_at": "2024-09-01 11:34:42"
+    "patient_id": "aut",
+    "referred_at": "2024-09-09 10:01:57"
 };
 
 fetch(url, {
@@ -1049,10 +1055,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-appointments--id-"
-               value="Bearer VeZaEgbDP3v681fch6a4kd5"
+               value="Bearer fkDd1VZ63Eegbah8c6vPa54"
                data-component="header">
     <br>
-<p>Example: <code>Bearer VeZaEgbDP3v681fch6a4kd5</code></p>
+<p>Example: <code>Bearer fkDd1VZ63Eegbah8c6vPa54</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1083,10 +1089,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-appointments--id-"
-               value="quia"
+               value="295bade4-b1d5-4ef6-8681-bd3db0dcf23c"
                data-component="url">
     <br>
-<p>The ID of the appointment. Example: <code>quia</code></p>
+<p>The ID of the appointment. Example: <code>295bade4-b1d5-4ef6-8681-bd3db0dcf23c</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1095,10 +1101,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="patient_id"                data-endpoint="PUTapi-appointments--id-"
-               value="corrupti"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>corrupti</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>referred_at</code></b>&nbsp;&nbsp;
@@ -1106,10 +1112,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="referred_at"                data-endpoint="PUTapi-appointments--id-"
-               value="2024-09-01 11:34:42"
+               value="2024-09-09 10:01:57"
                data-component="body">
     <br>
-<p>Must be a valid date in the format <code>Y-m-d H:i:s</code>. Example: <code>2024-09-01 11:34:42</code></p>
+<p>Must be a valid date in the format <code>Y-m-d H:i:s</code>. Example: <code>2024-09-09 10:01:57</code></p>
         </div>
         </form>
 
@@ -1127,19 +1133,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/appointments/est" \
-    --header "Authorization: Bearer c5eaV1Dg84ah6kPZfE36bdv" \
+    "http://localhost:8000/api/appointments/295bade4-b1d5-4ef6-8681-bd3db0dcf23c" \
+    --header "Authorization: Bearer 6b3P1V8adhcgZfE5a6v4keD" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/appointments/est"
+    "http://localhost:8000/api/appointments/295bade4-b1d5-4ef6-8681-bd3db0dcf23c"
 );
 
 const headers = {
-    "Authorization": "Bearer c5eaV1Dg84ah6kPZfE36bdv",
+    "Authorization": "Bearer 6b3P1V8adhcgZfE5a6v4keD",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1222,10 +1228,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-appointments--id-"
-               value="Bearer c5eaV1Dg84ah6kPZfE36bdv"
+               value="Bearer 6b3P1V8adhcgZfE5a6v4keD"
                data-component="header">
     <br>
-<p>Example: <code>Bearer c5eaV1Dg84ah6kPZfE36bdv</code></p>
+<p>Example: <code>Bearer 6b3P1V8adhcgZfE5a6v4keD</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -1256,10 +1262,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-appointments--id-"
-               value="est"
+               value="295bade4-b1d5-4ef6-8681-bd3db0dcf23c"
                data-component="url">
     <br>
-<p>The ID of the appointment. Example: <code>est</code></p>
+<p>The ID of the appointment. Example: <code>295bade4-b1d5-4ef6-8681-bd3db0dcf23c</code></p>
             </div>
                     </form>
 
@@ -1284,9 +1290,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"repellat\",
-    \"password\": \"M&lt;m6&amp;}A1yf]rmWBm\",
-    \"role\": \"eos\"
+    \"user_name\": \"omnis\",
+    \"password\": \"Y0G-S%,@=U\'^i=4\",
+    \"role\": \"officia\"
 }"
 </code></pre></div>
 
@@ -1302,9 +1308,9 @@ const headers = {
 };
 
 let body = {
-    "user_name": "repellat",
-    "password": "M&lt;m6&amp;}A1yf]rmWBm",
-    "role": "eos"
+    "user_name": "omnis",
+    "password": "Y0G-S%,@=U'^i=4",
+    "role": "officia"
 };
 
 fetch(url, {
@@ -1416,10 +1422,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-login"
-               value="repellat"
+               value="omnis"
                data-component="body">
     <br>
-<p>Example: <code>repellat</code></p>
+<p>Example: <code>omnis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1427,10 +1433,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-login"
-               value="M<m6&}A1yf]rmWBm"
+               value="Y0G-S%,@=U'^i=4"
                data-component="body">
     <br>
-<p>Example: <code>M&lt;m6&amp;}A1yf]rmWBm</code></p>
+<p>Example: <code>Y0G-S%,@=U'^i=4</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -1438,10 +1444,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-login"
-               value="eos"
+               value="officia"
                data-component="body">
     <br>
-<p>Example: <code>eos</code></p>
+<p>Example: <code>officia</code></p>
         </div>
         </form>
 
@@ -1462,7 +1468,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"iusto\"
+    \"user_name\": \"sunt\"
 }"
 </code></pre></div>
 
@@ -1478,7 +1484,7 @@ const headers = {
 };
 
 let body = {
-    "user_name": "iusto"
+    "user_name": "sunt"
 };
 
 fetch(url, {
@@ -2001,10 +2007,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-send-otp"
-               value="iusto"
+               value="sunt"
                data-component="body">
     <br>
-<p>Example: <code>iusto</code></p>
+<p>Example: <code>sunt</code></p>
         </div>
         </form>
 
@@ -2025,9 +2031,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"eos\",
-    \"otp_code\": \"dolorem\",
-    \"role\": \"voluptatem\"
+    \"user_name\": \"eum\",
+    \"otp_code\": \"quisquam\",
+    \"role\": \"qui\"
 }"
 </code></pre></div>
 
@@ -2043,9 +2049,9 @@ const headers = {
 };
 
 let body = {
-    "user_name": "eos",
-    "otp_code": "dolorem",
-    "role": "voluptatem"
+    "user_name": "eum",
+    "otp_code": "quisquam",
+    "role": "qui"
 };
 
 fetch(url, {
@@ -2157,10 +2163,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-forgot-password"
-               value="eos"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>eos</code></p>
+<p>Example: <code>eum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>otp_code</code></b>&nbsp;&nbsp;
@@ -2168,10 +2174,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="otp_code"                data-endpoint="POSTapi-auth-forgot-password"
-               value="dolorem"
+               value="quisquam"
                data-component="body">
     <br>
-<p>Example: <code>dolorem</code></p>
+<p>Example: <code>quisquam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -2179,10 +2185,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-forgot-password"
-               value="voluptatem"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>qui</code></p>
         </div>
         </form>
 
@@ -2203,7 +2209,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"user_name\": \"officiis\"
+    \"user_name\": \"sit\"
 }"
 </code></pre></div>
 
@@ -2219,7 +2225,7 @@ const headers = {
 };
 
 let body = {
-    "user_name": "officiis"
+    "user_name": "sit"
 };
 
 fetch(url, {
@@ -2327,10 +2333,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_name"                data-endpoint="POSTapi-auth-sign"
-               value="officiis"
+               value="sit"
                data-component="body">
     <br>
-<p>Example: <code>officiis</code></p>
+<p>Example: <code>sit</code></p>
         </div>
         </form>
 
@@ -2348,19 +2354,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/auth/logout/sint" \
-    --header "Authorization: Bearer Paadf5DhE1c4gbe6VZ68v3k" \
+    --get "http://localhost:8000/api/auth/logout/totam" \
+    --header "Authorization: Bearer 15d6habkZaDvfEg4V83Pe6c" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/auth/logout/sint"
+    "http://localhost:8000/api/auth/logout/totam"
 );
 
 const headers = {
-    "Authorization": "Bearer Paadf5DhE1c4gbe6VZ68v3k",
+    "Authorization": "Bearer 15d6habkZaDvfEg4V83Pe6c",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2443,10 +2449,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-auth-logout--role-"
-               value="Bearer Paadf5DhE1c4gbe6VZ68v3k"
+               value="Bearer 15d6habkZaDvfEg4V83Pe6c"
                data-component="header">
     <br>
-<p>Example: <code>Bearer Paadf5DhE1c4gbe6VZ68v3k</code></p>
+<p>Example: <code>Bearer 15d6habkZaDvfEg4V83Pe6c</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2477,10 +2483,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="GETapi-auth-logout--role-"
-               value="sint"
+               value="totam"
                data-component="url">
     <br>
-<p>Example: <code>sint</code></p>
+<p>Example: <code>totam</code></p>
             </div>
                     </form>
 
@@ -2488,7 +2494,145 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
     
 
-                                <h2 id="patient-GETapi-patients">GET api/patients</h2>
+                                <h2 id="patient-GETapi-patients-filters">GET api/patients/filters</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-patients-filters">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/patients/filters" \
+    --header "Authorization: Bearer 8Zdhbfg1V5DaP3c6k6eEav4" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/patients/filters"
+);
+
+const headers = {
+    "Authorization": "Bearer 8Zdhbfg1V5DaP3c6k6eEav4",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-patients-filters">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-patients-filters" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-patients-filters"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-patients-filters"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-patients-filters" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-patients-filters">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-patients-filters" data-method="GET"
+      data-path="api/patients/filters"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-patients-filters', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-patients-filters"
+                    onclick="tryItOut('GETapi-patients-filters');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-patients-filters"
+                    onclick="cancelTryOut('GETapi-patients-filters');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-patients-filters"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/patients/filters</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-patients-filters"
+               value="Bearer 8Zdhbfg1V5DaP3c6k6eEav4"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer 8Zdhbfg1V5DaP3c6k6eEav4</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-patients-filters"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-patients-filters"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="patient-GETapi-patients">GET api/patients</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2502,8 +2646,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/patients?name=eaque" \
-    --header "Authorization: Bearer 5PVkfDage8cah16EvbdZ634" \
+    --get "http://localhost:8000/api/patients?name=harum&amp;national_code=occaecati&amp;email=kaitlin.heidenreich%40example.net&amp;mobile=recusandae" \
+    --header "Authorization: Bearer hevPDZ3dkb48fV66a1gEa5c" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2514,13 +2658,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "name": "eaque",
+    "name": "harum",
+    "national_code": "occaecati",
+    "email": "kaitlin.heidenreich@example.net",
+    "mobile": "recusandae",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
-    "Authorization": "Bearer 5PVkfDage8cah16EvbdZ634",
+    "Authorization": "Bearer hevPDZ3dkb48fV66a1gEa5c",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2603,10 +2750,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-patients"
-               value="Bearer 5PVkfDage8cah16EvbdZ634"
+               value="Bearer hevPDZ3dkb48fV66a1gEa5c"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 5PVkfDage8cah16EvbdZ634</code></p>
+<p>Example: <code>Bearer hevPDZ3dkb48fV66a1gEa5c</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2637,10 +2784,54 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="GETapi-patients"
-               value="eaque"
+               value="harum"
                data-component="query">
     <br>
-<p>Example: <code>eaque</code></p>
+<p>Example: <code>harum</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>city_id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="city_id"                data-endpoint="GETapi-patients"
+               value=""
+               data-component="query">
+    <br>
+
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>national_code</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="national_code"                data-endpoint="GETapi-patients"
+               value="occaecati"
+               data-component="query">
+    <br>
+<p>Example: <code>occaecati</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="email"                data-endpoint="GETapi-patients"
+               value="kaitlin.heidenreich@example.net"
+               data-component="query">
+    <br>
+<p>Example: <code>kaitlin.heidenreich@example.net</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>mobile</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="mobile"                data-endpoint="GETapi-patients"
+               value="recusandae"
+               data-component="query">
+    <br>
+<p>Example: <code>recusandae</code></p>
             </div>
                 </form>
 
@@ -2659,7 +2850,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/patients/create" \
-    --header "Authorization: Bearer Zg14facPvd6bDk8EVh6a53e" \
+    --header "Authorization: Bearer dceP3v6hVf48agE5a6DkbZ1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2670,7 +2861,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer Zg14facPvd6bDk8EVh6a53e",
+    "Authorization": "Bearer dceP3v6hVf48agE5a6DkbZ1",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -2753,10 +2944,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-patients-create"
-               value="Bearer Zg14facPvd6bDk8EVh6a53e"
+               value="Bearer dceP3v6hVf48agE5a6DkbZ1"
                data-component="header">
     <br>
-<p>Example: <code>Bearer Zg14facPvd6bDk8EVh6a53e</code></p>
+<p>Example: <code>Bearer dceP3v6hVf48agE5a6DkbZ1</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2797,23 +2988,23 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/patients" \
-    --header "Authorization: Bearer adafD6138E6bchevk4gPZ5V" \
+    --header "Authorization: Bearer 3Zhk8v6d5Vf6cDgPe4Eb1aa" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"first_name\": \"nemo\",
-    \"last_name\": \"est\",
-    \"email\": \"coralie42@example.com\",
-    \"mobile\": \"37969328207]]]\",
-    \"gender_enum\": \"آقا\",
-    \"birthday\": \"2024-09-01\",
-    \"father_name\": \"repellat\",
+    \"first_name\": \"et\",
+    \"last_name\": \"quis\",
+    \"email\": \"markus82@example.net\",
+    \"mobile\": \"26410848148]]]]\",
+    \"gender_enum\": \"خانم\",
+    \"birthday\": \"2024-09-09\",
+    \"father_name\": \"nihil\",
     \"marital_enum\": \"مجرد\",
-    \"degree_enum\": \"کارشناسی ارشد\",
-    \"city_id\": \"cupiditate\",
-    \"address\": \"voluptas\",
-    \"national_code\": \"similique\",
-    \"spouse_national_code\": \"quia\"
+    \"degree_enum\": \"دکترا\",
+    \"city_id\": \"eius\",
+    \"address\": \"quasi\",
+    \"national_code\": \"quod\",
+    \"spouse_national_code\": \"consectetur\"
 }"
 </code></pre></div>
 
@@ -2824,25 +3015,25 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "Bearer adafD6138E6bchevk4gPZ5V",
+    "Authorization": "Bearer 3Zhk8v6d5Vf6cDgPe4Eb1aa",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "first_name": "nemo",
-    "last_name": "est",
-    "email": "coralie42@example.com",
-    "mobile": "37969328207]]]",
-    "gender_enum": "آقا",
-    "birthday": "2024-09-01",
-    "father_name": "repellat",
+    "first_name": "et",
+    "last_name": "quis",
+    "email": "markus82@example.net",
+    "mobile": "26410848148]]]]",
+    "gender_enum": "خانم",
+    "birthday": "2024-09-09",
+    "father_name": "nihil",
     "marital_enum": "مجرد",
-    "degree_enum": "کارشناسی ارشد",
-    "city_id": "cupiditate",
-    "address": "voluptas",
-    "national_code": "similique",
-    "spouse_national_code": "quia"
+    "degree_enum": "دکترا",
+    "city_id": "eius",
+    "address": "quasi",
+    "national_code": "quod",
+    "spouse_national_code": "consectetur"
 };
 
 fetch(url, {
@@ -2924,10 +3115,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="POSTapi-patients"
-               value="Bearer adafD6138E6bchevk4gPZ5V"
+               value="Bearer 3Zhk8v6d5Vf6cDgPe4Eb1aa"
                data-component="header">
     <br>
-<p>Example: <code>Bearer adafD6138E6bchevk4gPZ5V</code></p>
+<p>Example: <code>Bearer 3Zhk8v6d5Vf6cDgPe4Eb1aa</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -2958,10 +3149,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name"                data-endpoint="POSTapi-patients"
-               value="nemo"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>nemo</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name</code></b>&nbsp;&nbsp;
@@ -2969,10 +3160,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name"                data-endpoint="POSTapi-patients"
-               value="est"
+               value="quis"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>quis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2980,10 +3171,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-patients"
-               value="coralie42@example.com"
+               value="markus82@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>coralie42@example.com</code></p>
+<p>Must be a valid email address. Example: <code>markus82@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mobile</code></b>&nbsp;&nbsp;
@@ -2991,10 +3182,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="mobile"                data-endpoint="POSTapi-patients"
-               value="37969328207]]]"
+               value="26410848148]]]]"
                data-component="body">
     <br>
-<p>Must match the regex /^[0-9]{11}+$/. Example: <code>37969328207]]]</code></p>
+<p>Must match the regex /^[0-9]{11}+$/. Example: <code>26410848148]]]]</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender_enum</code></b>&nbsp;&nbsp;
@@ -3002,10 +3193,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender_enum"                data-endpoint="POSTapi-patients"
-               value="آقا"
+               value="خانم"
                data-component="body">
     <br>
-<p>Example: <code>آقا</code></p>
+<p>Example: <code>خانم</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>خانم</code></li> <li><code>آقا</code></li></ul>
         </div>
@@ -3015,10 +3206,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="POSTapi-patients"
-               value="2024-09-01"
+               value="2024-09-09"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a valid date in the format <code>Y-m-d</code>. Example: <code>2024-09-01</code></p>
+<p>Must be a valid date. Must be a valid date in the format <code>Y-m-d</code>. Example: <code>2024-09-09</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>father_name</code></b>&nbsp;&nbsp;
@@ -3026,10 +3217,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="father_name"                data-endpoint="POSTapi-patients"
-               value="repellat"
+               value="nihil"
                data-component="body">
     <br>
-<p>Example: <code>repellat</code></p>
+<p>Example: <code>nihil</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>marital_enum</code></b>&nbsp;&nbsp;
@@ -3050,10 +3241,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="degree_enum"                data-endpoint="POSTapi-patients"
-               value="کارشناسی ارشد"
+               value="دکترا"
                data-component="body">
     <br>
-<p>Example: <code>کارشناسی ارشد</code></p>
+<p>Example: <code>دکترا</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>بدون مدرک</code></li> <li><code>دیپلم</code></li> <li><code>فوق دیپلم</code></li> <li><code>کارشناسی</code></li> <li><code>کارشناسی ارشد</code></li> <li><code>دکترا</code></li> <li><code>غیره</code></li></ul>
         </div>
@@ -3063,10 +3254,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="city_id"                data-endpoint="POSTapi-patients"
-               value="cupiditate"
+               value="eius"
                data-component="body">
     <br>
-<p>Example: <code>cupiditate</code></p>
+<p>Example: <code>eius</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -3074,10 +3265,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-patients"
-               value="voluptas"
+               value="quasi"
                data-component="body">
     <br>
-<p>Example: <code>voluptas</code></p>
+<p>Example: <code>quasi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>national_code</code></b>&nbsp;&nbsp;
@@ -3085,10 +3276,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="national_code"                data-endpoint="POSTapi-patients"
-               value="similique"
+               value="quod"
                data-component="body">
     <br>
-<p>Example: <code>similique</code></p>
+<p>Example: <code>quod</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>spouse_national_code</code></b>&nbsp;&nbsp;
@@ -3096,10 +3287,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="spouse_national_code"                data-endpoint="POSTapi-patients"
-               value="quia"
+               value="consectetur"
                data-component="body">
     <br>
-<p>Example: <code>quia</code></p>
+<p>Example: <code>consectetur</code></p>
         </div>
         </form>
 
@@ -3117,19 +3308,19 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/patients/aut" \
-    --header "Authorization: Bearer geDk6aPfv1E456hZcab83Vd" \
+    --get "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8" \
+    --header "Authorization: Bearer 45cv1D66f3k8ePhaVgaZEdb" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/patients/aut"
+    "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
 );
 
 const headers = {
-    "Authorization": "Bearer geDk6aPfv1E456hZcab83Vd",
+    "Authorization": "Bearer 45cv1D66f3k8ePhaVgaZEdb",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3212,10 +3403,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-patients--id-"
-               value="Bearer geDk6aPfv1E456hZcab83Vd"
+               value="Bearer 45cv1D66f3k8ePhaVgaZEdb"
                data-component="header">
     <br>
-<p>Example: <code>Bearer geDk6aPfv1E456hZcab83Vd</code></p>
+<p>Example: <code>Bearer 45cv1D66f3k8ePhaVgaZEdb</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3246,10 +3437,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-patients--id-"
-               value="aut"
+               value="48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
                data-component="url">
     <br>
-<p>The ID of the patient. Example: <code>aut</code></p>
+<p>The ID of the patient. Example: <code>48645fab-b43d-4a7e-a1bd-28df8ba9feb8</code></p>
             </div>
                     </form>
 
@@ -3267,19 +3458,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/patients/ratione/edit" \
-    --header "Authorization: Bearer h638dEvbc4V1ePD65Zfkaga" \
+    --get "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8/edit" \
+    --header "Authorization: Bearer P3VbgdaD6Ev1hc645kfa8eZ" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/patients/ratione/edit"
+    "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8/edit"
 );
 
 const headers = {
-    "Authorization": "Bearer h638dEvbc4V1ePD65Zfkaga",
+    "Authorization": "Bearer P3VbgdaD6Ev1hc645kfa8eZ",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3362,10 +3553,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="GETapi-patients--patient_id--edit"
-               value="Bearer h638dEvbc4V1ePD65Zfkaga"
+               value="Bearer P3VbgdaD6Ev1hc645kfa8eZ"
                data-component="header">
     <br>
-<p>Example: <code>Bearer h638dEvbc4V1ePD65Zfkaga</code></p>
+<p>Example: <code>Bearer P3VbgdaD6Ev1hc645kfa8eZ</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3396,10 +3587,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="patient_id"                data-endpoint="GETapi-patients--patient_id--edit"
-               value="ratione"
+               value="48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
                data-component="url">
     <br>
-<p>The ID of the patient. Example: <code>ratione</code></p>
+<p>The ID of the patient. Example: <code>48645fab-b43d-4a7e-a1bd-28df8ba9feb8</code></p>
             </div>
                     </form>
 
@@ -3417,53 +3608,53 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/patients/corporis" \
-    --header "Authorization: Bearer 5h4f36EZeDcVPdga1a68vkb" \
+    "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8" \
+    --header "Authorization: Bearer 3hegdv5Pa8cV6kEDab16Z4f" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"first_name\": \"quibusdam\",
-    \"last_name\": \"rerum\",
-    \"email\": \"green09@example.com\",
-    \"mobile\": \"31553160485]\",
-    \"gender_enum\": \"آقا\",
-    \"birthday\": \"2024-09-01\",
-    \"father_name\": \"est\",
+    \"first_name\": \"non\",
+    \"last_name\": \"nesciunt\",
+    \"email\": \"mcglynn.reid@example.org\",
+    \"mobile\": \"37967421194]\",
+    \"gender_enum\": \"خانم\",
+    \"birthday\": \"2024-09-09\",
+    \"father_name\": \"voluptas\",
     \"marital_enum\": \"مجرد\",
-    \"degree_enum\": \"کارشناسی ارشد\",
-    \"city_id\": \"sit\",
-    \"address\": \"perferendis\",
-    \"national_code\": \"dignissimos\",
-    \"spouse_national_code\": \"sit\"
+    \"degree_enum\": \"بدون مدرک\",
+    \"city_id\": \"ut\",
+    \"address\": \"sint\",
+    \"national_code\": \"qui\",
+    \"spouse_national_code\": \"rem\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/patients/corporis"
+    "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
 );
 
 const headers = {
-    "Authorization": "Bearer 5h4f36EZeDcVPdga1a68vkb",
+    "Authorization": "Bearer 3hegdv5Pa8cV6kEDab16Z4f",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
 let body = {
-    "first_name": "quibusdam",
-    "last_name": "rerum",
-    "email": "green09@example.com",
-    "mobile": "31553160485]",
-    "gender_enum": "آقا",
-    "birthday": "2024-09-01",
-    "father_name": "est",
+    "first_name": "non",
+    "last_name": "nesciunt",
+    "email": "mcglynn.reid@example.org",
+    "mobile": "37967421194]",
+    "gender_enum": "خانم",
+    "birthday": "2024-09-09",
+    "father_name": "voluptas",
     "marital_enum": "مجرد",
-    "degree_enum": "کارشناسی ارشد",
-    "city_id": "sit",
-    "address": "perferendis",
-    "national_code": "dignissimos",
-    "spouse_national_code": "sit"
+    "degree_enum": "بدون مدرک",
+    "city_id": "ut",
+    "address": "sint",
+    "national_code": "qui",
+    "spouse_national_code": "rem"
 };
 
 fetch(url, {
@@ -3549,10 +3740,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="PUTapi-patients--id-"
-               value="Bearer 5h4f36EZeDcVPdga1a68vkb"
+               value="Bearer 3hegdv5Pa8cV6kEDab16Z4f"
                data-component="header">
     <br>
-<p>Example: <code>Bearer 5h4f36EZeDcVPdga1a68vkb</code></p>
+<p>Example: <code>Bearer 3hegdv5Pa8cV6kEDab16Z4f</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3583,10 +3774,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-patients--id-"
-               value="corporis"
+               value="48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
                data-component="url">
     <br>
-<p>The ID of the patient. Example: <code>corporis</code></p>
+<p>The ID of the patient. Example: <code>48645fab-b43d-4a7e-a1bd-28df8ba9feb8</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -3595,10 +3786,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name"                data-endpoint="PUTapi-patients--id-"
-               value="quibusdam"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>quibusdam</code></p>
+<p>Example: <code>non</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name</code></b>&nbsp;&nbsp;
@@ -3606,10 +3797,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name"                data-endpoint="PUTapi-patients--id-"
-               value="rerum"
+               value="nesciunt"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>nesciunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -3617,10 +3808,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="PUTapi-patients--id-"
-               value="green09@example.com"
+               value="mcglynn.reid@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>green09@example.com</code></p>
+<p>Must be a valid email address. Example: <code>mcglynn.reid@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mobile</code></b>&nbsp;&nbsp;
@@ -3628,10 +3819,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="mobile"                data-endpoint="PUTapi-patients--id-"
-               value="31553160485]"
+               value="37967421194]"
                data-component="body">
     <br>
-<p>Must match the regex /^[0-9]{11}+$/. Example: <code>31553160485]</code></p>
+<p>Must match the regex /^[0-9]{11}+$/. Example: <code>37967421194]</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender_enum</code></b>&nbsp;&nbsp;
@@ -3639,10 +3830,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender_enum"                data-endpoint="PUTapi-patients--id-"
-               value="آقا"
+               value="خانم"
                data-component="body">
     <br>
-<p>Example: <code>آقا</code></p>
+<p>Example: <code>خانم</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>خانم</code></li> <li><code>آقا</code></li></ul>
         </div>
@@ -3652,10 +3843,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="PUTapi-patients--id-"
-               value="2024-09-01"
+               value="2024-09-09"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a valid date in the format <code>Y-m-d</code>. Example: <code>2024-09-01</code></p>
+<p>Must be a valid date. Must be a valid date in the format <code>Y-m-d</code>. Example: <code>2024-09-09</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>father_name</code></b>&nbsp;&nbsp;
@@ -3663,10 +3854,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="father_name"                data-endpoint="PUTapi-patients--id-"
-               value="est"
+               value="voluptas"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>voluptas</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>marital_enum</code></b>&nbsp;&nbsp;
@@ -3687,10 +3878,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="degree_enum"                data-endpoint="PUTapi-patients--id-"
-               value="کارشناسی ارشد"
+               value="بدون مدرک"
                data-component="body">
     <br>
-<p>Example: <code>کارشناسی ارشد</code></p>
+<p>Example: <code>بدون مدرک</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>بدون مدرک</code></li> <li><code>دیپلم</code></li> <li><code>فوق دیپلم</code></li> <li><code>کارشناسی</code></li> <li><code>کارشناسی ارشد</code></li> <li><code>دکترا</code></li> <li><code>غیره</code></li></ul>
         </div>
@@ -3700,10 +3891,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="city_id"                data-endpoint="PUTapi-patients--id-"
-               value="sit"
+               value="ut"
                data-component="body">
     <br>
-<p>Example: <code>sit</code></p>
+<p>Example: <code>ut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -3711,10 +3902,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="PUTapi-patients--id-"
-               value="perferendis"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>perferendis</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>national_code</code></b>&nbsp;&nbsp;
@@ -3722,10 +3913,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="national_code"                data-endpoint="PUTapi-patients--id-"
-               value="dignissimos"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>dignissimos</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>spouse_national_code</code></b>&nbsp;&nbsp;
@@ -3733,10 +3924,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="spouse_national_code"                data-endpoint="PUTapi-patients--id-"
-               value="sit"
+               value="rem"
                data-component="body">
     <br>
-<p>Example: <code>sit</code></p>
+<p>Example: <code>rem</code></p>
         </div>
         </form>
 
@@ -3754,19 +3945,19 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/patients/quo" \
-    --header "Authorization: Bearer f1khavb6VaE85gZ3P46dceD" \
+    "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8" \
+    --header "Authorization: Bearer 6aEc1ekvZ4Vh6dg83a5fDPb" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/patients/quo"
+    "http://localhost:8000/api/patients/48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
 );
 
 const headers = {
-    "Authorization": "Bearer f1khavb6VaE85gZ3P46dceD",
+    "Authorization": "Bearer 6aEc1ekvZ4Vh6dg83a5fDPb",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -3849,10 +4040,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-patients--id-"
-               value="Bearer f1khavb6VaE85gZ3P46dceD"
+               value="Bearer 6aEc1ekvZ4Vh6dg83a5fDPb"
                data-component="header">
     <br>
-<p>Example: <code>Bearer f1khavb6VaE85gZ3P46dceD</code></p>
+<p>Example: <code>Bearer 6aEc1ekvZ4Vh6dg83a5fDPb</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -3883,12 +4074,171 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-patients--id-"
-               value="quo"
+               value="48645fab-b43d-4a7e-a1bd-28df8ba9feb8"
                data-component="url">
     <br>
-<p>The ID of the patient. Example: <code>quo</code></p>
+<p>The ID of the patient. Example: <code>48645fab-b43d-4a7e-a1bd-28df8ba9feb8</code></p>
             </div>
                     </form>
+
+                    <h2 id="patient-POSTapi-patients-exist">POST api/patients/exist</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-patients-exist">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/patients/exist" \
+    --header "Authorization: Bearer Z483kbeEdcvD16VP6aafg5h" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"national_code\": \"excepturi\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/patients/exist"
+);
+
+const headers = {
+    "Authorization": "Bearer Z483kbeEdcvD16VP6aafg5h",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "national_code": "excepturi"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-patients-exist">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-patients-exist" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-patients-exist"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-patients-exist"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-patients-exist" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-patients-exist">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-patients-exist" data-method="POST"
+      data-path="api/patients/exist"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-patients-exist', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-patients-exist"
+                    onclick="tryItOut('POSTapi-patients-exist');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-patients-exist"
+                    onclick="cancelTryOut('POSTapi-patients-exist');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-patients-exist"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/patients/exist</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-patients-exist"
+               value="Bearer Z483kbeEdcvD16VP6aafg5h"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer Z483kbeEdcvD16VP6aafg5h</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-patients-exist"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-patients-exist"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>national_code</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="national_code"                data-endpoint="POSTapi-patients-exist"
+               value="excepturi"
+               data-component="body">
+    <br>
+<p>Example: <code>excepturi</code></p>
+        </div>
+        </form>
 
             
 

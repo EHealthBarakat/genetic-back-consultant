@@ -2,11 +2,11 @@
 
 namespace App\Http\Requests\Patient;
 
-
+use App\Rules\NationalCode;
 use Illuminate\Foundation\Http\FormRequest;
 
 
-class PatientIndexRequest extends FormRequest
+class PatientExistRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,21 +24,11 @@ class PatientIndexRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "name" => "nullable|string",
-            "city_id" => "nullable|exists:cities,id",
-            "national_code" => [
-                'nullable',
-                'string'
+            'national_code' => [
+                'required',
+                'string',
+                new NationalCode,
             ],
-            'email'=> ["nullable","string"],
-            'mobile'=>'nullable|string',
-        ];
-    }
-
-    public function queryParameters()
-    {
-        return [
-            'name', 'city_id', 'national_code','mobile','email'
         ];
     }
 }
